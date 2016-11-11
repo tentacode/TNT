@@ -95,16 +95,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010207991108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610315c2868005547aace620c76ea470, type: 3}
+  m_Script: {fileID: 11500000, guid: a5ae7e0f53563224ab8ea76ecd9656d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lazerSpeed: 30
+  maxBounces: 9
 --- !u!135 &135000011884702466
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010207991108}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: eb29e04bf43cc9c4a9a91beba8debae1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

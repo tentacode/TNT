@@ -333,5 +333,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8d084a6b2f81040b84704baef0af8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1000010263015454, guid: 06d48dd8a118afc4dbface75d5b81a28, type: 2}
-  lazerSpeed: 10
+  bullet: {fileID: 1000010207991108, guid: 06b18d580e18b60468cc585d4580f5b7, type: 2}
