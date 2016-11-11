@@ -29,11 +29,11 @@ public class PlayerMovement : MonoBehaviour {
 
 
         ///////////////// rotate player for shoot  //////////////
-        if (Input.GetKey(KeyCode.LeftArrow))
+     /*   if (Input.GetKey(KeyCode.LeftArrow))
             transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
 
         if (Input.GetKey(KeyCode.RightArrow))
-            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);*/
         ////////////////////////////////////////////////////////
 
 
