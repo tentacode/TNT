@@ -138,7 +138,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 5
+    positiveButton: joystick button 14
     altNegativeButton: 
     altPositiveButton: mouse 0
     gravity: 1000
@@ -260,11 +260,7 @@ InputManager:
     invert: 0
     type: 2
     axis: 3
-<<<<<<< HEAD
-    joyNum: 0
-=======
     joyNum: 1
->>>>>>> origin/master
   - serializedVersion: 3
     m_Name: RotateY2
     descriptiveName: 
@@ -279,13 +275,8 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-<<<<<<< HEAD
-    axis: 4
-    joyNum: 0
-=======
     axis: 3
     joyNum: 2
->>>>>>> origin/master
   - serializedVersion: 3
     m_Name: RotateY3
     descriptiveName: 
