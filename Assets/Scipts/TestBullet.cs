@@ -4,22 +4,31 @@ using System.Collections;
 public class TestBullet : MonoBehaviour {
 
 
-    private Rigidbody rgbd;
-    private GameObject bullet;
+   
+    public GameObject bullet;
+    public float lazerSpeed;
 
     // Use this for initialization
     void Start () {
-        rgbd = gameObject.GetComponent<Rigidbody>();
-        bullet = GameObject.Find("lazer");
+     
+       
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(bullet);
+            Shoot();
         }
+        
+    }
 
+    // instencie et applique une force a l'objet 
+    void Shoot()
+    {
+      
+        GameObject lazer=  Instantiate(bullet);
+        lazer.GetComponent<Rigidbody>().AddForce(new Vector3(1f,5f,0)*lazerSpeed,ForceMode.Impulse);
     }
 }
