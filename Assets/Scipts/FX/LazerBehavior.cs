@@ -8,6 +8,7 @@ public class LazerBehavior : MonoBehaviour {
 
     private Rigidbody rgbd;
     private int bounceCounter;
+    private bool hasCollided = false;
 
     // Use this for initialization
     void Start()
@@ -22,8 +23,11 @@ public class LazerBehavior : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        float angle = Mathf.Atan2(rgbd.velocity.x, rgbd.velocity.y) * Mathf.Rad2Deg;
-        transform.GetChild(0).transform.rotation = Quaternion.AngleAxis(-angle, Vector3.forward);
+        if (hasCollided) {
+            float angle = Mathf.Atan2 (rgbd.velocity.x, rgbd.velocity.y) * Mathf.Rad2Deg;
+            transform.GetChild (0).transform.rotation = Quaternion.AngleAxis (-angle, Vector3.forward);
+            hasCollided = false;
+        }
 
         if (bounceCounter > maxBounces)
         {
@@ -34,5 +38,6 @@ public class LazerBehavior : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         bounceCounter++;
+        hasCollided = true;
     }
 }
