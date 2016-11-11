@@ -6,7 +6,7 @@ public class TestBullet : MonoBehaviour {
 
    
     public GameObject bullet;
-    public float lazerSpeed;
+   
 
     // Use this for initialization
     void Start () {
@@ -27,8 +27,6 @@ public class TestBullet : MonoBehaviour {
     // instencie et applique une force a l'objet 
     void Shoot()
     {
-      
         GameObject lazer=  Instantiate(bullet);
-        lazer.GetComponent<Rigidbody>().AddForce(new Vector3(1f,5f,0)*lazerSpeed,ForceMode.Impulse);
     }
 }
