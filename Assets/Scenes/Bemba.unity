@@ -100,8 +100,8 @@ GameObject:
   - 4: {fileID: 216459236}
   - 212: {fileID: 216459235}
   - 135: {fileID: 216459234}
-  - 114: {fileID: 216459237}
   - 54: {fileID: 216459238}
+  - 114: {fileID: 216459239}
   m_Layer: 0
   m_Name: perso
   m_TagString: Untagged
@@ -168,19 +168,6 @@ Transform:
   - {fileID: 1764254210}
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!114 &216459237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 216459233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a210c123c237334895c2bd7ab3e9c59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  turnSpeed: 50
 --- !u!54 &216459238
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -196,6 +183,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &216459239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216459233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d76523095770d458e2b96a2e592fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  turnSpeed: 50
 --- !u!1 &780692708
 GameObject:
   m_ObjectHideFlags: 0
