@@ -67,7 +67,10 @@ public class LazerBehavior : MonoBehaviour {
             audioManager.PlayClip (audioManager.bounceShield, collision.collider.transform.position);
         }
 
-        bounceCounter++;
+        if (collision.collider.tag != "Shield") {
+            bounceCounter++;
+        }
+
         hasCollided = true;
     }
 }

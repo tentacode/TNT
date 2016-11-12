@@ -418,7 +418,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 27
+  field of view: 18
   orthographic: 0
   orthographic size: 22.58
   m_Depth: -1
@@ -441,7 +441,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 919366734}
   m_LocalRotation: {x: 0.7069895, y: 0, z: 0, w: 0.707224}
-  m_LocalPosition: {x: 0, y: 100, z: 0}
+  m_LocalPosition: {x: 0, y: 150, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 89.981, y: 0, z: 0}
   m_Children: []
@@ -485,6 +485,11 @@ Prefab:
     - target: {fileID: 4000010903071720, guid: 2f0f4780f82b040b388a67cd4322cab7, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010886561524, guid: 2f0f4780f82b040b388a67cd4322cab7,
+        type: 2}
+      propertyPath: playerIndex
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f0f4780f82b040b388a67cd4322cab7, type: 2}
@@ -611,6 +616,11 @@ Prefab:
     - target: {fileID: 4000013634317428, guid: 148ae6b2e7ecd4fdd8840466004bbda2, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011304204836, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
+        type: 2}
+      propertyPath: playerIndex
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 148ae6b2e7ecd4fdd8840466004bbda2, type: 2}
