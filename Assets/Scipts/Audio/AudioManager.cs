@@ -11,13 +11,13 @@ public class AudioManager : MonoBehaviour
 
     [Header("FX")]
     public AudioClip fireLazer;
-    public AudioClip bumpLazer;
-    public AudioClip hitPlayer;
-    public AudioClip deadPlayer;
+    public AudioClip bounceWall;
+    public AudioClip bounceShield;
 
 	void Start ()
 	{
 		musicSource.clip = gameMusic;
+        musicSource.volume = 0.1f;
 		musicSource.Play ();
 	}
 
@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
-	public void PlayClip(AudioClip clip, Vector3 position)
+    public void PlayClip(AudioClip clip, Vector3 position, float volume = 1.0f)
 	{
 		GameObject sourceGameObject = (GameObject)Instantiate (
 			audioSourcePrefab, 
@@ -43,6 +43,7 @@ public class AudioManager : MonoBehaviour
 		);
 
 		AudioSource source = sourceGameObject.GetComponent<AudioSource> ();
+        source.volume = volume;
 		source.clip = clip;
 		source.Play ();
 

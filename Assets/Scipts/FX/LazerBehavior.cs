@@ -11,10 +11,12 @@ public class LazerBehavior : MonoBehaviour {
     private bool hasCollided = false;
     public int playerIndex;
 
+    public AudioManager audioManager;
 
     // Use this for initialization
     void Start()
     {
+        audioManager.PlayClip (audioManager.fireLazer, transform.position);
         rgbd = GetComponent<Rigidbody> ();
         rgbd.AddForce (transform.forward * lazerSpeed, ForceMode.Impulse); 
 
@@ -41,6 +43,12 @@ public class LazerBehavior : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
+        if (collision.collider.tag == "Wall") {
+            audioManager.PlayClip (audioManager.bounceWall, collision.collider.transform.position, 0.3f);
+        } else if (collision.collider.tag == "Shield") {
+            audioManager.PlayClip (audioManager.bounceShield, collision.collider.transform.position);
+        }
+
         bounceCounter++;
         hasCollided = true;
     }

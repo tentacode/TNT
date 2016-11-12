@@ -72,7 +72,7 @@ Material:
     m_Floats:
     - first:
         name: _BumpScale
-      second: 3
+      second: 2
     - first:
         name: _Cutoff
       second: 0.5
@@ -93,7 +93,7 @@ Material:
       second: 1
     - first:
         name: _Metallic
-      second: 0.62
+      second: 0.92
     - first:
         name: _Mode
       second: 0

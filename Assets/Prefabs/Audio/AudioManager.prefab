@@ -159,7 +159,6 @@ MonoBehaviour:
     type: 2}
   musicSource: {fileID: 82000012294679510}
   gameMusic: {fileID: 8300000, guid: 70481d16e1da24ef4ae6fe45e5b964e7, type: 3}
-  fireLazer: {fileID: 8300000, guid: 25a3e2216e9594152b374f19976b4f53, type: 3}
-  bumpLazer: {fileID: 8300000, guid: 5bf9ce2695ba14549a66134614e2a290, type: 3}
-  hitPlayer: {fileID: 8300000, guid: a7aa8f1bc235340a6b484241c68f4969, type: 3}
-  deadPlayer: {fileID: 8300000, guid: 3058f908c08b140158000efdfa64b6fb, type: 3}
+  fireLazer: {fileID: 8300000, guid: 1b45b648415414aadb5180353474ee1f, type: 3}
+  bounceWall: {fileID: 8300000, guid: 6a808f97e7ded43eabd3a7dcddea0052, type: 3}
+  bounceShield: {fileID: 8300000, guid: 7f0a71963096a4cc681cf3192eb12422, type: 3}
