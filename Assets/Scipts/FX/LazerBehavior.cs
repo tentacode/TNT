@@ -18,8 +18,8 @@ public class LazerBehavior : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        initialScale = new Vector3 (0.1f, 1.0f, 0.1f);
-        expandedScale = new Vector3 (0.1f, 1.0f, 1.0f);
+        initialScale = new Vector3 (1.0f, 1.0f, 0.1f);
+        expandedScale = new Vector3 (1.0f, 1.0f, 1.0f);
         rgbd = GetComponent<Rigidbody> ();
         rgbd.AddForce (transform.forward * lazerSpeed, ForceMode.Impulse); 
 
