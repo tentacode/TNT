@@ -40,7 +40,6 @@ public class LazerBehavior : MonoBehaviour {
         rgbd.AddForce (transform.forward * lazerSpeed, ForceMode.Impulse); 
 
         bounceCounter = 0;
-        maxBounces = 9;
     }
 
     // Update is called once per frame
