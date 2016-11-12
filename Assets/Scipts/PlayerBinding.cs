@@ -2,25 +2,26 @@
 using System.Collections;
 
 public class PlayerBinding : MonoBehaviour {
-
+    public int xBoundary = 40;
+    public int zBoundary = 20;
 	
 	void LateUpdate () {
 	
-        if (transform.position.x <= -50)
+        if (transform.position.x <= -xBoundary)
         {
-            transform.position = new Vector3(-50, transform.position.y, transform.position.z) ;
+            transform.position = new Vector3(-xBoundary, transform.position.y, transform.position.z) ;
         }
-        if (transform.position.z <= -20)
+        if (transform.position.z <= -zBoundary)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y,-20);
+            transform.position = new Vector3(transform.position.x, transform.position.y,-zBoundary);
         }
-        if (transform.position.z >= 20)
+        if (transform.position.z >= zBoundary)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 20);
+            transform.position = new Vector3(transform.position.x, transform.position.y, zBoundary);
         }
-        if (transform.position.x >= 43)
+        if (transform.position.x >= xBoundary)
         {
-            transform.position = new Vector3(43, transform.position.y, transform.position.z);
+            transform.position = new Vector3(xBoundary, transform.position.y, transform.position.z);
         }
     }
 }
