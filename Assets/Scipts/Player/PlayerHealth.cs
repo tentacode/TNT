@@ -13,7 +13,6 @@ public class PlayerHealth : MonoBehaviour {
     {
         etat = state.alive;
         score = 0;
-        life = 1;
     }
       void Update()
     {
@@ -22,7 +21,6 @@ public class PlayerHealth : MonoBehaviour {
             ImDead();
             Debug.Log("gigi");
         }
-        Debug.Log(gameObject.layer);
     }
 
     void OnTriggerEnter(Collider other)
