@@ -10,7 +10,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip gameMusic;
 
     [Header("FX")]
-    public AudioClip fireLazer;
+    public AudioClip fireLazer1;
+    public AudioClip fireLazer2;
+    public AudioClip fireLazer3;
+    public AudioClip fireLazer4;
     public AudioClip bounceWall;
     public AudioClip bounceShield;
 
@@ -19,19 +22,6 @@ public class AudioManager : MonoBehaviour
 		musicSource.clip = gameMusic;
         musicSource.volume = 0.1f;
 		musicSource.Play ();
-	}
-
-	void Update ()
-	{
-		if (Input.GetKeyDown (KeyCode.W)) {
-			PlayClip (fireLazer, new Vector3(-4.7f,0,0));
-		}
-		if (Input.GetKeyDown (KeyCode.X)) {
-			PlayClip (fireLazer, new Vector3(0,0,0));
-		}
-		if (Input.GetKeyDown (KeyCode.C)) {
-			PlayClip (fireLazer, new Vector3(4.7f,0,0));
-		}
 	}
 
     public void PlayClip(AudioClip clip, Vector3 position, float volume = 1.0f)

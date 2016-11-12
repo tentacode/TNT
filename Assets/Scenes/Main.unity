@@ -272,12 +272,40 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012402952956, guid: 418e354e4bf5b410bb2cef0a964e6f01, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54000013563397590, guid: 418e354e4bf5b410bb2cef0a964e6f01, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 418e354e4bf5b410bb2cef0a964e6f01, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &797423875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 797423876}
+  m_Layer: 0
+  m_Name: AlienCannon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797423876
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797423875}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 0.0126}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_Children: []
+  m_Father: {fileID: 2128550128}
+  m_RootOrder: 0
 --- !u!1 &919366734
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +528,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a6d072b4e0955545aa6a7265c465342, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1256652817 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014258738494, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1559018890}
+--- !u!64 &1256652821
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256652817}
+  m_Material: {fileID: 13400000, guid: eb29e04bf43cc9c4a9a91beba8debae1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 4300004, guid: 0b9bceb0b3e4a40bbaa760d5e619c51f, type: 3}
 --- !u!1001 &1559018890
 Prefab:
   m_ObjectHideFlags: 0
@@ -538,20 +583,6 @@ Prefab:
     - target: {fileID: 4000011942489628, guid: 148ae6b2e7ecd4fdd8840466004bbda2, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 95000013168995816, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 0cca0aa22176045679e01753d45fe094, type: 2}
-    - target: {fileID: 95000013168995816, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
-        type: 2}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: ece7163f7089548a89c85d901a1c121b, type: 3}
-    - target: {fileID: 1000010181663408, guid: 148ae6b2e7ecd4fdd8840466004bbda2, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 148ae6b2e7ecd4fdd8840466004bbda2, type: 2}
@@ -603,7 +634,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000010181663408, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
     type: 2}
   m_PrefabInternal: {fileID: 1559018890}
---- !u!114 &2116934252
+--- !u!114 &2116934250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -611,12 +642,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2116934249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2d76523095770d458e2b96a2e592fab, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d8cd44e406514ca9ac316211c6ed14c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  turnSpeed: 50
---- !u!114 &2116934253
+  spawnPoint: {fileID: 797423876}
+  lazerPrefab: {fileID: 1000012348529496, guid: 06b18d580e18b60468cc585d4580f5b7,
+    type: 2}
+--- !u!114 &2116934251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -624,8 +656,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 2116934249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b25b990ff14d47ac95446042789050f, type: 3}
+  m_Script: {fileID: 11500000, guid: df8ef7daeae8e09429594b1f9c4c63e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIndex: 2
-  lazerColor: {fileID: 2800000, guid: bc0848a7251d14566ac3584f99e709a3, type: 3}
+  life: 3
+--- !u!136 &2116934252
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116934249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 21.80847
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &2128550128 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000010372520424, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1559018890}

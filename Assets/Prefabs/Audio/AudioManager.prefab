@@ -159,6 +159,9 @@ MonoBehaviour:
     type: 2}
   musicSource: {fileID: 82000012294679510}
   gameMusic: {fileID: 8300000, guid: 70481d16e1da24ef4ae6fe45e5b964e7, type: 3}
-  fireLazer: {fileID: 8300000, guid: 1b45b648415414aadb5180353474ee1f, type: 3}
+  fireLazer1: {fileID: 8300000, guid: 1b45b648415414aadb5180353474ee1f, type: 3}
+  fireLazer2: {fileID: 8300000, guid: 9f5460fec003249768c9d198d525d0ec, type: 3}
+  fireLazer3: {fileID: 8300000, guid: d691418b1801f47709014dd055521bd7, type: 3}
+  fireLazer4: {fileID: 8300000, guid: 79198d29a69314390ab2c79c7d0bd1d8, type: 3}
   bounceWall: {fileID: 8300000, guid: 6a808f97e7ded43eabd3a7dcddea0052, type: 3}
   bounceShield: {fileID: 8300000, guid: 7f0a71963096a4cc681cf3192eb12422, type: 3}

@@ -16,7 +16,26 @@ public class LazerBehavior : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        audioManager.PlayClip (audioManager.fireLazer, transform.position);
+        AudioClip clip = audioManager.fireLazer1;
+        switch (playerIndex) {
+        case 1:
+            clip = audioManager.fireLazer1;
+            break;
+        case 2:
+            clip = audioManager.fireLazer2;
+            break;
+        case 3:
+            clip = audioManager.fireLazer3;
+            break;
+        case 4:
+            clip = audioManager.fireLazer4;
+            break;
+        default:
+            Debug.LogError("No player index");
+            break;
+        }
+
+        audioManager.PlayClip (clip, transform.position);
         rgbd = GetComponent<Rigidbody> ();
         rgbd.AddForce (transform.forward * lazerSpeed, ForceMode.Impulse); 
 
