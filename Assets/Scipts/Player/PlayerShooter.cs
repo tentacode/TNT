@@ -14,7 +14,6 @@ public class PlayerShooter : MonoBehaviour
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
         lazerColor = GetComponent<PlayerIdentity> ().lazerColor;
         fireButton = string.Format("Shoot{0}", playerIndex);
-       // Debug.Log(fireButton);
     }
 	
 	// Update is called once per frame
@@ -28,11 +27,11 @@ public class PlayerShooter : MonoBehaviour
     bool IsFiring()
     {
        
-//#if UNITY_STANDALONE_OSX
-//        if (playerIndex == 1) {
-//            fireButton = "ShootMac1";
-//        }
-//#endif
+#if UNITY_STANDALONE_OSX
+        if (playerIndex == 1) {
+            fireButton = "ShootMac1";
+        }
+#endif
       
         return Input.GetButtonDown (fireButton);
     }
