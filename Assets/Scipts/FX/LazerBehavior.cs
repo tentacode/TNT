@@ -9,6 +9,8 @@ public class LazerBehavior : MonoBehaviour {
     private Rigidbody rgbd;
     private int bounceCounter;
     private bool hasCollided = false;
+    public int playerIndex;
+
 
     // Use this for initialization
     void Start()

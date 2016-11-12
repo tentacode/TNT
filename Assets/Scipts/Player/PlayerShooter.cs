@@ -21,6 +21,7 @@ public class PlayerShooter : MonoBehaviour
         if (IsFiring()) {
             GameObject lazer = (GameObject)Instantiate (lazerPrefab, spawnPoint.position, spawnPoint.rotation);
             lazer.transform.GetChild(0).GetComponent<Renderer>().material.mainTexture = lazerColor;
+            lazer.GetComponent<LazerBehavior>().playerIndex = playerIndex;
         }
 	}
 
