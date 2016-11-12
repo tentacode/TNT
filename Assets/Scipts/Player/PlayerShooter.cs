@@ -6,7 +6,7 @@ public class PlayerShooter : MonoBehaviour
     public Transform spawnPoint;
     public GameObject lazerPrefab;
 
-    private Sprite lazerColor;
+    private Texture lazerColor;
     private int playerIndex;
     string fireButton;
     void Start ()
@@ -20,7 +20,7 @@ public class PlayerShooter : MonoBehaviour
 	void Update () {
         if (IsFiring()) {
             GameObject lazer = (GameObject)Instantiate (lazerPrefab, spawnPoint.position, spawnPoint.rotation);
-//            lazer.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = lazerColor;
+            lazer.transform.GetChild(0).GetComponent<Renderer>().material.mainTexture = lazerColor;
         }
 	}
 
