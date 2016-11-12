@@ -28,8 +28,8 @@ public class PlayerShooter : MonoBehaviour
     {
        
         #if UNITY_STANDALONE_OSX
-        if (playerIndex == 1) {
-            fireButton = "ShootMac1";
+        if (playerIndex <= 2) {
+            fireButton = string.Format("ShootMac{0}", playerIndex);
         }
         #endif
       

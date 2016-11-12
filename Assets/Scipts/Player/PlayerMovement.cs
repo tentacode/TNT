@@ -32,10 +32,10 @@ public class PlayerMovement : MonoBehaviour {
     string GetPlayerAxis(string axis)
     {
         #if UNITY_STANDALONE_OSX
-        if (playerIndex == 1 && axis == "RotateX") {
+        if (playerIndex <= 2 && axis == "RotateX") {
             axis = "RotateXMac";
         }
-        if (playerIndex == 1 && axis == "RotateY") {
+        if (playerIndex <= 2 && axis == "RotateY") {
             axis = "RotateYMac";
         }
         #endif

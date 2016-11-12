@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: 931a2fcc1413c415abe62a289606ee56
+timeCreated: 1478948756
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Av bras D
+    100002: Av bras D_end
+    100004: Av bras G
+    100006: Av bras G_end
+    100008: Bassin
+    100010: Bras D
+    100012: Bras G
+    100014: Cape D bas
+    100016: Cape D bas_end
+    100018: Cape D haut
+    100020: Cape G Bas
+    100022: Cape G Bas_end
+    100024: Cape G Haut
+    100026: Connect D
+    100028: Connect G
+    100030: Cube.001
+    100032: Cuisse D
+    100034: Cuisse G
+    100036: Epaule D
+    100038: Epaule G
+    100040: Foot D
+    100042: Foot D_end
+    100044: Foot G
+    100046: Foot G_end
+    100048: Head
+    100050: Head_end
+    100052: mid
+    100054: Shield
+    100056: //RootNode
+    100058: Stranger_Armature
+    100060: Stranger_Gun
+    100062: Stranger_Skin
+    100064: Tibia D
+    100066: Tibia G
+    100068: Torse
+    400000: Av bras D
+    400002: Av bras D_end
+    400004: Av bras G
+    400006: Av bras G_end
+    400008: Bassin
+    400010: Bras D
+    400012: Bras G
+    400014: Cape D bas
+    400016: Cape D bas_end
+    400018: Cape D haut
+    400020: Cape G Bas
+    400022: Cape G Bas_end
+    400024: Cape G Haut
+    400026: Connect D
+    400028: Connect G
+    400030: Cube.001
+    400032: Cuisse D
+    400034: Cuisse G
+    400036: Epaule D
+    400038: Epaule G
+    400040: Foot D
+    400042: Foot D_end
+    400044: Foot G
+    400046: Foot G_end
+    400048: Head
+    400050: Head_end
+    400052: mid
+    400054: Shield
+    400056: //RootNode
+    400058: Stranger_Armature
+    400060: Stranger_Gun
+    400062: Stranger_Skin
+    400064: Tibia D
+    400066: Tibia G
+    400068: Torse
+    2300000: Cube.001
+    2300002: Shield
+    2300004: Stranger_Gun
+    3300000: Cube.001
+    3300002: Shield
+    3300004: Stranger_Gun
+    4300000: Shield
+    4300002: Cube.001
+    4300004: Stranger_Gun
+    4300006: Stranger_Skin
+    7400000: Stranger_Armature|Stranger_Idle
+    7400002: Stranger_Armature|Stranger_Walk
+    7400004: Stranger_Armature|Stranger_WalkLeft
+    9500000: //RootNode
+    13700000: Stranger_Skin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
