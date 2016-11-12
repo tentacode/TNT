@@ -40,6 +40,7 @@ ModelImporter:
     100064: Tibia D
     100066: Tibia G
     100068: Torse
+    100070: Stranger_skull
     400000: Av bras D
     400002: Av bras D_end
     400004: Av bras G
@@ -75,16 +76,20 @@ ModelImporter:
     400064: Tibia D
     400066: Tibia G
     400068: Torse
+    400070: Stranger_skull
     2300000: Cube.001
     2300002: Shield
     2300004: Stranger_Gun
+    2300006: Stranger_skull
     3300000: Cube.001
     3300002: Shield
     3300004: Stranger_Gun
+    3300006: Stranger_skull
     4300000: Shield
     4300002: Cube.001
     4300004: Stranger_Gun
     4300006: Stranger_Skin
+    4300008: Stranger_skull
     7400000: Stranger_Armature|Stranger_Idle
     7400002: Stranger_Armature|Stranger_Walk
     7400004: Stranger_Armature|Stranger_WalkLeft
@@ -110,7 +115,307 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Stranger_Armature|Stranger_Idle
+      takeName: Stranger_Armature|Stranger_Idle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Shield
+        weight: 1
+      - path: Stranger_Armature
+        weight: 1
+      - path: Stranger_Armature/Bassin
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D/Av bras
+          D_end
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D/Stranger_Gun
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Stranger_skull
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G/Av bras G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G/Av bras G/Av bras
+          G_end
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Head
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Head/Head_end
+        weight: 1
+      - path: Stranger_Armature/Cape D haut
+        weight: 1
+      - path: Stranger_Armature/Cape D haut/Cape D bas
+        weight: 1
+      - path: Stranger_Armature/Cape D haut/Cape D bas/Cape D bas_end
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut/Cape G Bas
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut/Cape G Bas/Cape G Bas_end
+        weight: 1
+      - path: Stranger_Armature/Connect D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D/Foot D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D/Foot D/Foot D_end
+        weight: 1
+      - path: Stranger_Armature/Connect G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G/Foot G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G/Foot G/Foot G_end
+        weight: 1
+      - path: Stranger_Skin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Stranger_Armature|Stranger_Walk
+      takeName: Stranger_Armature|Stranger_Walk
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Shield
+        weight: 1
+      - path: Stranger_Armature
+        weight: 1
+      - path: Stranger_Armature/Bassin
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D/Av bras
+          D_end
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D/Stranger_Gun
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Stranger_skull
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G/Av bras G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G/Av bras G/Av bras
+          G_end
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Head
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Head/Head_end
+        weight: 1
+      - path: Stranger_Armature/Cape D haut
+        weight: 1
+      - path: Stranger_Armature/Cape D haut/Cape D bas
+        weight: 1
+      - path: Stranger_Armature/Cape D haut/Cape D bas/Cape D bas_end
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut/Cape G Bas
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut/Cape G Bas/Cape G Bas_end
+        weight: 1
+      - path: Stranger_Armature/Connect D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D/Foot D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D/Foot D/Foot D_end
+        weight: 1
+      - path: Stranger_Armature/Connect G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G/Foot G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G/Foot G/Foot G_end
+        weight: 1
+      - path: Stranger_Skin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Stranger_Armature|Stranger_WalkLeft
+      takeName: Stranger_Armature|Stranger_WalkLeft
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Shield
+        weight: 1
+      - path: Stranger_Armature
+        weight: 1
+      - path: Stranger_Armature/Bassin
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D/Av bras
+          D_end
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Av bras D/Stranger_Gun
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule D/Bras D/Stranger_skull
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G/Av bras G
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Epaule G/Bras G/Av bras G/Av bras
+          G_end
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Head
+        weight: 1
+      - path: Stranger_Armature/Bassin/mid/Torse/Head/Head_end
+        weight: 1
+      - path: Stranger_Armature/Cape D haut
+        weight: 1
+      - path: Stranger_Armature/Cape D haut/Cape D bas
+        weight: 1
+      - path: Stranger_Armature/Cape D haut/Cape D bas/Cape D bas_end
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut/Cape G Bas
+        weight: 1
+      - path: Stranger_Armature/Cape G Haut/Cape G Bas/Cape G Bas_end
+        weight: 1
+      - path: Stranger_Armature/Connect D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D/Foot D
+        weight: 1
+      - path: Stranger_Armature/Connect D/Cuisse D/Tibia D/Foot D/Foot D_end
+        weight: 1
+      - path: Stranger_Armature/Connect G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G/Foot G
+        weight: 1
+      - path: Stranger_Armature/Connect G/Cuisse G/Tibia G/Foot G/Foot G_end
+        weight: 1
+      - path: Stranger_Skin
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
