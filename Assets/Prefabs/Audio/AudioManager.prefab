@@ -165,3 +165,4 @@ MonoBehaviour:
   fireLazer4: {fileID: 8300000, guid: 79198d29a69314390ab2c79c7d0bd1d8, type: 3}
   bounceWall: {fileID: 8300000, guid: 6a808f97e7ded43eabd3a7dcddea0052, type: 3}
   bounceShield: {fileID: 8300000, guid: 7f0a71963096a4cc681cf3192eb12422, type: 3}
+  reload: {fileID: 8300000, guid: a71d83f63d40f45a69be3fd264549ab0, type: 3}

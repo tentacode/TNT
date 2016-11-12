@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip fireLazer4;
     public AudioClip bounceWall;
     public AudioClip bounceShield;
+    public AudioClip reload;
 
 	void Start ()
 	{
