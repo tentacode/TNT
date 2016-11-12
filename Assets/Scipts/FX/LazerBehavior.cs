@@ -14,7 +14,7 @@ public class LazerBehavior : MonoBehaviour {
     void Start()
     {
         rgbd = GetComponent<Rigidbody> ();
-        rgbd.AddForce (transform.up * lazerSpeed, ForceMode.Impulse); 
+        rgbd.AddForce (transform.forward * lazerSpeed, ForceMode.Impulse); 
 
         bounceCounter = 0;
         maxBounces = 9;
@@ -24,8 +24,8 @@ public class LazerBehavior : MonoBehaviour {
     void Update()
     {
         if (hasCollided) {
-            float angle = Mathf.Atan2 (rgbd.velocity.x, rgbd.velocity.y) * Mathf.Rad2Deg;
-            transform.GetChild (0).transform.rotation = Quaternion.AngleAxis (-angle, Vector3.forward);
+            float angle = Mathf.Atan2 (rgbd.velocity.x, rgbd.velocity.z) * Mathf.Rad2Deg;
+            transform.GetChild (0).transform.rotation = Quaternion.AngleAxis (angle, Vector3.up);
             hasCollided = false;
         }
 
