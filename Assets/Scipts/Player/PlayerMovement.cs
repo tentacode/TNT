@@ -23,12 +23,18 @@ public class PlayerMovement : MonoBehaviour {
     {
         float moveHorizontal = Input.GetAxis(GetPlayerAxis("Horizontal"));
         float moveVertical = Input.GetAxis(GetPlayerAxis("Vertical"));
-        float rotateX = Input.GetAxis(GetPlayerAxis("RotateX"));
-        float rotateY = Input.GetAxis(GetPlayerAxis("RotateY"));
 
         Vector3 mouvment = new Vector3(moveHorizontal, 0, moveVertical);
         animator.SetFloat ("Speed", mouvment.magnitude);
         rigidbody.MovePosition(transform.position + mouvment * speed * Time.deltaTime);
+
+        float rotateX = Input.GetAxis(GetPlayerAxis("RotateX"));
+        float rotateY = Input.GetAxis(GetPlayerAxis("RotateY"));
+
+        // dead rotation
+        if (Mathf.Abs(rotateX) <= 0.1 && Mathf.Abs(rotateY) <= 0.1) {
+            return;
+        }
 
         float angle = Mathf.Atan2(rotateX, rotateY) * Mathf.Rad2Deg + 90.0f;
         transform.rotation = Quaternion.Euler(new Vector3(0, angle, 0));
