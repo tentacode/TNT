@@ -7,14 +7,12 @@ public class PlayerMovement : MonoBehaviour {
     public float turnSpeed = 50f;
 
     private int playerIndex;
-    private Rigidbody rigidbody;
 
     private Animator animator;
 
     void Start()
     {
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
-        rigidbody = gameObject.GetComponent<Rigidbody>();
 
         animator = GetComponent<Animator> ();
     }
@@ -26,7 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 
         Vector3 mouvment = new Vector3(moveHorizontal, 0, moveVertical);
         animator.SetFloat ("Speed", mouvment.magnitude);
-        rigidbody.MovePosition(transform.position + mouvment * speed * Time.deltaTime);
+        transform.position = (transform.position + mouvment * speed * Time.deltaTime);
 
         float rotateX = Input.GetAxis(GetPlayerAxis("RotateX"));
         float rotateY = Input.GetAxis(GetPlayerAxis("RotateY"));

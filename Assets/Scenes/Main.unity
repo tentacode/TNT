@@ -135,6 +135,10 @@ Prefab:
       propertyPath: lazerColor
       value: 
       objectReference: {fileID: 2800000, guid: 6b99b0b8ee92b4d7c83666bc663fb023, type: 3}
+    - target: {fileID: 1000012864557784, guid: 148ae6b2e7ecd4fdd8840466004bbda2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 148ae6b2e7ecd4fdd8840466004bbda2, type: 2}
   m_IsPrefabParent: 0
@@ -290,7 +294,13 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 54000013563397590, guid: 418e354e4bf5b410bb2cef0a964e6f01,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54000013563397590, guid: 418e354e4bf5b410bb2cef0a964e6f01, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 418e354e4bf5b410bb2cef0a964e6f01, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &919366734
