@@ -9,10 +9,14 @@ public class PlayerMovement : MonoBehaviour {
     private int playerIndex;
     private Rigidbody rigidbody;
 
+    private Animator animator;
+
     void Start()
     {
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
         rigidbody = gameObject.GetComponent<Rigidbody>();
+
+        animator = GetComponent<Animator> ();
     }
 
     void FixedUpdate()
@@ -23,6 +27,7 @@ public class PlayerMovement : MonoBehaviour {
         float rotateY = Input.GetAxis(GetPlayerAxis("RotateY"));
 
         Vector3 mouvment = new Vector3(moveHorizontal, 0, moveVertical);
+        animator.SetFloat ("Speed", mouvment.magnitude);
         rigidbody.MovePosition(transform.position + mouvment * speed * Time.deltaTime);
 
         float angle = Mathf.Atan2(rotateX, rotateY) * Mathf.Rad2Deg + 90.0f;

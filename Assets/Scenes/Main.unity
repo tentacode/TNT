@@ -333,6 +333,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10000
+--- !u!95 &174429520 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95000011109369650, guid: 418e354e4bf5b410bb2cef0a964e6f01,
+    type: 2}
+  m_PrefabInternal: {fileID: 1348115353}
 --- !u!1 &228353955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,6 +2609,11 @@ Prefab:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010030564104, guid: 418e354e4bf5b410bb2cef0a964e6f01,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 174429520}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 418e354e4bf5b410bb2cef0a964e6f01, type: 2}
   m_IsPrefabParent: 0
