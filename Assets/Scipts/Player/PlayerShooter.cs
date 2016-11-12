@@ -9,6 +9,7 @@ public class PlayerShooter : MonoBehaviour
     private Texture lazerColor;
     private int playerIndex;
     string fireButton;
+
     void Start ()
     {
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
@@ -27,7 +28,6 @@ public class PlayerShooter : MonoBehaviour
 
     bool IsFiring()
     {
-       
         #if UNITY_STANDALONE_OSX
         if (playerIndex <= 2) {
             fireButton = string.Format("ShootMac{0}", playerIndex);
