@@ -21,6 +21,6 @@ public class score
 
     public score(int playerIndex)
     {
-        player
+        playerName = string.Format("Player{0}", playerIndex);
     }
 }
