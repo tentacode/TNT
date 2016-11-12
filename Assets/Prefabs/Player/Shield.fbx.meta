@@ -1,17 +1,15 @@
 fileFormatVersion: 2
-guid: e2ca7f6053fb57e4fa005a87913d2707
-timeCreated: 1478942463
+guid: 372b16a9b1086a644ab98ac4df797882
+timeCreated: 1478943896
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2300000: default
-    3300000: default
-    4300000: default
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cylinder.001
   materials:
     importMaterials: 1
     materialName: 0
@@ -44,7 +42,7 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
-    keepQuads: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
