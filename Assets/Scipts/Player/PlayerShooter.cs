@@ -7,6 +7,7 @@ public class PlayerShooter : MonoBehaviour
     public GameObject lazerPrefab;
 
     private Texture lazerColor;
+    private Color particleColor;
     private int playerIndex;
     string fireButton;
 
@@ -14,6 +15,7 @@ public class PlayerShooter : MonoBehaviour
     {
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
         lazerColor = GetComponent<PlayerIdentity> ().lazerColor;
+        particleColor = GetComponent<PlayerIdentity> ().color;
         fireButton = string.Format("Shoot{0}", playerIndex);
     }
 	
@@ -22,6 +24,7 @@ public class PlayerShooter : MonoBehaviour
         if (IsFiring()) {
             GameObject lazer = (GameObject)Instantiate (lazerPrefab, spawnPoint.position, spawnPoint.rotation);
             lazer.transform.GetChild(0).GetComponent<Renderer>().material.mainTexture = lazerColor;
+            lazer.transform.GetChild(0).GetChild(0).GetComponent<ParticleSystem>().startColor = particleColor;
             lazer.GetComponent<LazerBehavior>().playerIndex = playerIndex;
         }
 	}

@@ -8,5 +8,6 @@ public class PlayerIdentity : MonoBehaviour
 
 
     [Header("Skin")]
+    public Color color;
     public Texture lazerColor;
 }
