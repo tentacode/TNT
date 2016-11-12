@@ -8,12 +8,14 @@ public class PlayerShooter : MonoBehaviour
 
     private Sprite lazerColor;
     private int playerIndex;
-
-	void Start ()
+    string fireButton;
+    void Start ()
     {
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
         lazerColor = GetComponent<PlayerIdentity> ().lazerColor;
-	}
+        fireButton = string.Format("Shoot{0}", playerIndex);
+       // Debug.Log(fireButton);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -25,13 +27,13 @@ public class PlayerShooter : MonoBehaviour
 
     bool IsFiring()
     {
-        string fireButton = string.Format ("Shoot{0}", playerIndex);
-        #if UNITY_STANDALONE_OSX
-        if (playerIndex == 1) {
-            fireButton = "ShootMac1";
-        }
-        #endif
-
+       
+//#if UNITY_STANDALONE_OSX
+//        if (playerIndex == 1) {
+//            fireButton = "ShootMac1";
+//        }
+//#endif
+      
         return Input.GetButtonDown (fireButton);
     }
 }

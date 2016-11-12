@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b25b990ff14d47ac95446042789050f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIndex: 4
+  playerIndex: 3
   lazerColor: {fileID: 21300000, guid: aab4af843c29043518e81712dc3d3010, type: 3}
 --- !u!114 &114000012953643044
 MonoBehaviour:

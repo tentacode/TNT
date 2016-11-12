@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
     void Start()
     {
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
+        Debug.Log(playerIndex);
         rigidbody = gameObject.GetComponent<Rigidbody>();
     }
 
@@ -31,14 +32,14 @@ public class PlayerMovement : MonoBehaviour {
 
     string GetPlayerAxis(string axis)
     {
-        #if UNITY_STANDALONE_OSX
-        if (playerIndex == 1 && axis == "RotateX") {
-            axis = "RotateXMac";
-        }
-        if (playerIndex == 1 && axis == "RotateY") {
-            axis = "RotateYMac";
-        }
-        #endif
+        //#if UNITY_STANDALONE_OSX
+        //if (playerIndex == 1 && axis == "RotateX") {
+        //    axis = "RotateXMac";
+        //}
+        //if (playerIndex == 1 && axis == "RotateY") {
+        //    axis = "RotateYMac";
+        //}
+        //#endif
 
         return string.Format ("{0}{1}", axis, playerIndex);
     }
