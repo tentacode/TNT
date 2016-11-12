@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 2
-  color: {r: 0.1586206, g: 1, b: 0, a: 0}
+  color: {r: 0.1586206, g: 1, b: 0, a: 0.741}
   lazerColor: {fileID: 2800000, guid: 59364cd16c42b467f888523b43cad640, type: 3}
 --- !u!114 &114000011577880562
 MonoBehaviour:
