@@ -20,18 +20,18 @@ public class PlayerShooter : MonoBehaviour
 	void Update () {
         if (IsFiring()) {
             GameObject lazer = (GameObject)Instantiate (lazerPrefab, spawnPoint.position, spawnPoint.rotation);
-            lazer.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = lazerColor;
+//            lazer.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = lazerColor;
         }
 	}
 
     bool IsFiring()
     {
        
-#if UNITY_STANDALONE_OSX
+        #if UNITY_STANDALONE_OSX
         if (playerIndex == 1) {
             fireButton = "ShootMac1";
         }
-#endif
+        #endif
       
         return Input.GetButtonDown (fireButton);
     }

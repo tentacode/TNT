@@ -22,11 +22,11 @@ public class PlayerMovement : MonoBehaviour {
         float rotateX = Input.GetAxis(GetPlayerAxis("RotateX"));
         float rotateY = Input.GetAxis(GetPlayerAxis("RotateY"));
 
-        Vector3 mouvment = new Vector3(moveHorizontal, moveVertical, 0);
+        Vector3 mouvment = new Vector3(moveHorizontal, 0, moveVertical);
         rigidbody.MovePosition(transform.position + mouvment * speed * Time.deltaTime);
 
-        float angle = Mathf.Atan2(rotateX, rotateY) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, -angle));
+        float angle = Mathf.Atan2(rotateX, rotateY) * Mathf.Rad2Deg + 90.0f;
+        transform.rotation = Quaternion.Euler(new Vector3(0, angle, 0));
     }
 
     string GetPlayerAxis(string axis)
