@@ -6,8 +6,8 @@ public class TitleController : MonoBehaviour
 {
 	void Update ()
     {
-        if (Input.GetKeyDown (KeyCode.Space)) {
-            SceneManager.LoadScene("Main");
+        if (Input.GetButtonDown ("Submit")) {
+            SceneManager.LoadScene("PlayerValidation");
         }
 
         if (Input.GetKeyDown (KeyCode.Escape)) {
