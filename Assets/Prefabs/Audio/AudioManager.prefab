@@ -158,11 +158,15 @@ MonoBehaviour:
   audioSourcePrefab: {fileID: 1000011129818344, guid: e3bac5243f9994fe08337a46cbd53520,
     type: 2}
   musicSource: {fileID: 82000012294679510}
-  gameMusic: {fileID: 8300000, guid: 70481d16e1da24ef4ae6fe45e5b964e7, type: 3}
+  gameMusic: {fileID: 8300000, guid: 989e94d0e582716468040b818b190ed0, type: 3}
   fireLazer1: {fileID: 8300000, guid: 1b45b648415414aadb5180353474ee1f, type: 3}
   fireLazer2: {fileID: 8300000, guid: 9f5460fec003249768c9d198d525d0ec, type: 3}
   fireLazer3: {fileID: 8300000, guid: d691418b1801f47709014dd055521bd7, type: 3}
   fireLazer4: {fileID: 8300000, guid: 79198d29a69314390ab2c79c7d0bd1d8, type: 3}
+  StrangerDeath: {fileID: 8300000, guid: ecc98f4a98c32474f81b9b5811e1a6eb, type: 3}
+  AlienBearDeath: {fileID: 8300000, guid: 30a1372552c86664792d70de2aa14844, type: 3}
+  Scrap: {fileID: 8300000, guid: 4e0dea004621d6745aa6301717b59220, type: 3}
+  Hunter: {fileID: 8300000, guid: c498a150fa588374bb1d94dd8fb2ddb6, type: 3}
   bounceWall: {fileID: 8300000, guid: 6a808f97e7ded43eabd3a7dcddea0052, type: 3}
   bounceShield: {fileID: 8300000, guid: 7f0a71963096a4cc681cf3192eb12422, type: 3}
   reload: {fileID: 8300000, guid: a71d83f63d40f45a69be3fd264549ab0, type: 3}
