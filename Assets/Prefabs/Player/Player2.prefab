@@ -1051,6 +1051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
+  shield: {fileID: 1000012635478074}
 --- !u!114 &114000013246735722
 MonoBehaviour:
   m_ObjectHideFlags: 1
