@@ -1260,6 +1260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 1
+  playerName: Stranger
   color: {r: 0.11764706, g: 0.9254902, b: 1, a: 0.6627451}
   lazerColor: {fileID: 2800000, guid: e3b292c7f1f694ccaa7e877df36396e8, type: 3}
 --- !u!114 &114000013181003704
