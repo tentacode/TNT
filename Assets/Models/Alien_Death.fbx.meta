@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: a61c27d78bc9b424a8d712fdc4d9fab7
+timeCreated: 1479038835
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Alien_Armature
+    100002: //RootNode
+    100004: Av bras D
+    100006: Av bras D_end
+    100008: Av bras G
+    100010: Av bras G_end
+    100012: Bassin
+    100014: Bone
+    100016: Bone.001
+    100018: Bone.002
+    100020: Bone.004
+    100022: Bone.005
+    100024: Bone.005_end
+    100026: Bone.006
+    100028: Bone.007
+    100030: Bone.007_end
+    100032: Bone.008
+    100034: Bone.009
+    100036: Bone.009_end
+    100038: Bone.010
+    100040: Bone.011
+    100042: Bone.012
+    100044: Bone.013
+    100046: Bone.014
+    100048: Bone.015
+    100050: Bone.016
+    100052: Bone.016_end
+    100054: Bone.017
+    100056: Bone.017_end
+    100058: Bone.019
+    100060: Bone.020
+    100062: Bone.020_end
+    100064: Bone.022
+    100066: Bone.023
+    100068: Bone.023_end
+    100070: Bras D
+    100072: Bras G
+    100074: Cape D bas
+    100076: Cape D bas_end
+    100078: Cape D haut
+    100080: Cape G Bas
+    100082: Cape G Bas_end
+    100084: Cape G Haut
+    100086: charp
+    100088: charp2
+    100090: chest
+    100092: Connect D
+    100094: Connect G
+    100096: Cuisse D
+    100098: Cuisse G
+    100100: Epaule D
+    100102: Epaule G
+    100104: Foot D
+    100106: Foot D_end
+    100108: Foot G
+    100110: Foot G_end
+    100112: foot.L
+    100114: foot.L_end
+    100116: foot.R
+    100118: foot.R_end
+    100120: forearm.L
+    100122: forearm.R
+    100124: hand.L
+    100126: hand.L_end
+    100128: hand.R
+    100130: hand.R_end
+    100132: Head
+    100134: head
+    100136: Head_end
+    100138: head_end
+    100140: hips
+    100142: Hunter_Armature
+    100144: left shoulder
+    100146: mid
+    100148: neck
+    100150: shin.L
+    100152: shin.R
+    100154: shoulder.L
+    100156: shoulder.R
+    100158: spine
+    100160: Stranger_Armature
+    100162: thigh.L
+    100164: thigh.R
+    100166: Tibia D
+    100168: Tibia G
+    100170: Torse
+    100172: upper_arm.L
+    100174: upper_arm.R
+    400000: Alien_Armature
+    400002: //RootNode
+    400004: Av bras D
+    400006: Av bras D_end
+    400008: Av bras G
+    400010: Av bras G_end
+    400012: Bassin
+    400014: Bone
+    400016: Bone.001
+    400018: Bone.002
+    400020: Bone.004
+    400022: Bone.005
+    400024: Bone.005_end
+    400026: Bone.006
+    400028: Bone.007
+    400030: Bone.007_end
+    400032: Bone.008
+    400034: Bone.009
+    400036: Bone.009_end
+    400038: Bone.010
+    400040: Bone.011
+    400042: Bone.012
+    400044: Bone.013
+    400046: Bone.014
+    400048: Bone.015
+    400050: Bone.016
+    400052: Bone.016_end
+    400054: Bone.017
+    400056: Bone.017_end
+    400058: Bone.019
+    400060: Bone.020
+    400062: Bone.020_end
+    400064: Bone.022
+    400066: Bone.023
+    400068: Bone.023_end
+    400070: Bras D
+    400072: Bras G
+    400074: Cape D bas
+    400076: Cape D bas_end
+    400078: Cape D haut
+    400080: Cape G Bas
+    400082: Cape G Bas_end
+    400084: Cape G Haut
+    400086: charp
+    400088: charp2
+    400090: chest
+    400092: Connect D
+    400094: Connect G
+    400096: Cuisse D
+    400098: Cuisse G
+    400100: Epaule D
+    400102: Epaule G
+    400104: Foot D
+    400106: Foot D_end
+    400108: Foot G
+    400110: Foot G_end
+    400112: foot.L
+    400114: foot.L_end
+    400116: foot.R
+    400118: foot.R_end
+    400120: forearm.L
+    400122: forearm.R
+    400124: hand.L
+    400126: hand.L_end
+    400128: hand.R
+    400130: hand.R_end
+    400132: Head
+    400134: head
+    400136: Head_end
+    400138: head_end
+    400140: hips
+    400142: Hunter_Armature
+    400144: left shoulder
+    400146: mid
+    400148: neck
+    400150: shin.L
+    400152: shin.R
+    400154: shoulder.L
+    400156: shoulder.R
+    400158: spine
+    400160: Stranger_Armature
+    400162: thigh.L
+    400164: thigh.R
+    400166: Tibia D
+    400168: Tibia G
+    400170: Torse
+    400172: upper_arm.L
+    400174: upper_arm.R
+    7400000: Hunter_Armature|Alien_DEATH
+    7400002: Hunter_Armature|Hunter_Death
+    7400004: Hunter_Armature|Hunter_Idle
+    7400006: Hunter_Armature|Hunter_Walk
+    7400008: Stranger_Armature|Alien_DEATH
+    7400010: Stranger_Armature|Stranger_DEATH
+    7400012: Stranger_Armature|Stranger_Idle
+    7400014: Stranger_Armature|Stranger_Walk
+    7400016: Stranger_Armature|Stranger_WalkLeft
+    7400018: Alien_Armature|Alien_DEATH
+    7400020: Alien_Armature|Alien_DEATH.001
+    7400022: Alien_Armature|Alien_Walk
+    7400024: Alien_Armature|AlienIdle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
