@@ -95,13 +95,13 @@ public class ValidationController : MonoBehaviour {
             return;
         }
 
-        int playerIndex = GetPlayerIndexButton(0);
+        int playerIndex = GetPlayerIndexButton(2);
         if (playerIndex == 0) {
             return;
         }
 
-        press1.SetActive (false);
-        image1.SetActive (true);
+        press3.SetActive (false);
+        image3.SetActive (true);
 
         countPlayer += 1;
         playerReady1 = true;
@@ -115,13 +115,13 @@ public class ValidationController : MonoBehaviour {
             return;
         }
 
-        int playerIndex = GetPlayerIndexButton(1);
+        int playerIndex = GetPlayerIndexButton(0);
         if (playerIndex == 0) {
             return;
         }
 
-        press2.SetActive (false);
-        image2.SetActive (true);
+        press1.SetActive (false);
+        image1.SetActive (true);
 
         countPlayer += 1;
         playerReady2 = true;
@@ -135,13 +135,13 @@ public class ValidationController : MonoBehaviour {
             return;
         }
 
-        int playerIndex = GetPlayerIndexButton(2);
+        int playerIndex = GetPlayerIndexButton(3);
         if (playerIndex == 0) {
             return;
         }
 
-        press3.SetActive (false);
-        image3.SetActive (true);
+        press4.SetActive (false);
+        image4.SetActive (true);
 
         countPlayer += 1;
         playerReady3 = true;
@@ -155,13 +155,13 @@ public class ValidationController : MonoBehaviour {
             return;
         }
 
-        int playerIndex = GetPlayerIndexButton(3);
+        int playerIndex = GetPlayerIndexButton(1);
         if (playerIndex == 0) {
             return;
         }
 
-        press4.SetActive (false);
-        image4.SetActive (true);
+        press2.SetActive (false);
+        image2.SetActive (true);
 
         countPlayer += 1;
         playerReady4 = true;

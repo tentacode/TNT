@@ -13,12 +13,12 @@ public class CreditsController : MonoBehaviour {
     void Start () {
         indexCredit = 0;
         
-        iList.Add("Credits : Antoine F.- Music & Sound Design");
-        iList.Add("Credits : Bemba D.- Code");
-        iList.Add("Credits : Corentin F.- M. - 2D/3D Graphics");
-        iList.Add("Credits : Gabriel P.- Code");
-        iList.Add("Credits : Kevin S.- Game Design & 3D Graphics");
-        iList.Add("Credits : Yendhi W.- Code");
+        iList.Add("Credits - Antoine - Music and Sound Design");
+        iList.Add("Credits - Bemba - Code");
+        iList.Add("Credits - Corentin - Graphics");
+        iList.Add("Credits - Gabriel - Code");
+        iList.Add("Credits - Kevin - Game Design and Graphics");
+        iList.Add("Credits - Yendhi - Code");
         Reload();
         
     }

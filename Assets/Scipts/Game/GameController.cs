@@ -12,15 +12,16 @@ public class GameController : MonoBehaviour
     int alivePlayer;
     public int playerActive1, playerActive2, playerActive3, playerActive4;
 
+    public GameObject score;
+
 
     public bool isGameEnd = false;
 
     void Start()
     {
+        score.SetActive (false);
         //Set les overlay de la scenne
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-        //applique l'overlay des scores
-        SceneManager.LoadScene("Score", LoadSceneMode.Additive);
 
         // instanciation des joueurs dans la scene
         if (PlayerPrefs.GetInt("Player1") != 0)
@@ -86,6 +87,9 @@ public class GameController : MonoBehaviour
         {
             PlayerPrefs.SetInt("Hunter", PlayerPrefs.GetInt("Hunter") + 1);
         }
+
+        score.SetActive (true);
+        score.GetComponent<ScoreManager> ().Refresh ();
 
         Debug.Log("Stranger" + PlayerPrefs.GetInt("Stranger"));
         Debug.Log("Alien Bear" + PlayerPrefs.GetInt("Alien Bear"));
