@@ -54,6 +54,10 @@ public class ValidationController : MonoBehaviour {
             text1.SetActive(true);
             start = true;
         }
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene("Title");
+        }
 
         if (start && Input.GetButtonDown("Submit"))
         {
