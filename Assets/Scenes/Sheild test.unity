@@ -209,8 +209,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a241bd4e9c0d4691b554750b9cbf65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1Prefab: {fileID: 0}
-  player2Prefab: {fileID: 0}
+  player1Prefab: {fileID: 1000012402952956, guid: 418e354e4bf5b410bb2cef0a964e6f01,
+    type: 2}
+  player2Prefab: {fileID: 1000012753318898, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
+    type: 2}
   player3Prefab: {fileID: 0}
   player4Prefab: {fileID: 0}
   spawn1: {fileID: 0}
@@ -246,6 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd7acddea4d2434dbf0a706c3922d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xBoundary: 40
+  zBoundary: 20
 --- !u!1 &919366734
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +353,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd7acddea4d2434dbf0a706c3922d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xBoundary: 40
+  zBoundary: 20
 --- !u!1001 &1043952342
 Prefab:
   m_ObjectHideFlags: 0
@@ -386,7 +392,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013645372336, guid: 0a6d072b4e0955545aa6a7265c465342, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4000012401528078, guid: 0a6d072b4e0955545aa6a7265c465342, type: 2}
       propertyPath: m_LocalScale.x
@@ -2487,7 +2493,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012071763638, guid: 418e354e4bf5b410bb2cef0a964e6f01, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114000012535973008, guid: 418e354e4bf5b410bb2cef0a964e6f01,
         type: 2}
