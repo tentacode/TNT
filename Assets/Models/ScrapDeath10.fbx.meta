@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: ede79948a3c424a709d020becd7c7ed4
+timeCreated: 1479043738
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Av bras D
+    100004: Av bras D_end
+    100006: Av bras G
+    100008: Av bras G_end
+    100010: Bassin
+    100012: Bras D
+    100014: Bras G
+    100016: Camera
+    100018: Cape D bas
+    100020: Cape D bas_end
+    100022: Cape D haut
+    100024: Cape G Bas
+    100026: Cape G Bas_end
+    100028: Cape G Haut
+    100030: Connect D
+    100032: Connect G
+    100034: Cuisse D
+    100036: Cuisse G
+    100038: DividedShield
+    100040: Epaule D
+    100042: Epaule G
+    100044: Foot D
+    100046: Foot D_end
+    100048: Foot G
+    100050: Foot G_end
+    100052: FullShield
+    100054: Head
+    100056: Head 1
+    100058: Head_end
+    100060: Head_end 1
+    100062: Lamp
+    100064: LFoot
+    100066: LFoot_end
+    100068: mid
+    100070: Middle
+    100072: Middle_end
+    100074: R.Foot
+    100076: R.Foot.001
+    100078: RFoot
+    100080: RFoot_end
+    100082: //RootNode
+    100084: Shield
+    100086: Stranger_Armature
+    100088: Stranger_Gun
+    100090: Stranger_Skin
+    100092: Stranger_skull
+    100094: Tibia D
+    100096: Tibia G
+    100098: Torse
+    400000: Armature
+    400002: Av bras D
+    400004: Av bras D_end
+    400006: Av bras G
+    400008: Av bras G_end
+    400010: Bassin
+    400012: Bras D
+    400014: Bras G
+    400016: Camera
+    400018: Cape D bas
+    400020: Cape D bas_end
+    400022: Cape D haut
+    400024: Cape G Bas
+    400026: Cape G Bas_end
+    400028: Cape G Haut
+    400030: Connect D
+    400032: Connect G
+    400034: Cuisse D
+    400036: Cuisse G
+    400038: DividedShield
+    400040: Epaule D
+    400042: Epaule G
+    400044: Foot D
+    400046: Foot D_end
+    400048: Foot G
+    400050: Foot G_end
+    400052: FullShield
+    400054: Head
+    400056: Head 1
+    400058: Head_end
+    400060: Head_end 1
+    400062: Lamp
+    400064: LFoot
+    400066: LFoot_end
+    400068: mid
+    400070: Middle
+    400072: Middle_end
+    400074: R.Foot
+    400076: R.Foot.001
+    400078: RFoot
+    400080: RFoot_end
+    400082: //RootNode
+    400084: Shield
+    400086: Stranger_Armature
+    400088: Stranger_Gun
+    400090: Stranger_Skin
+    400092: Stranger_skull
+    400094: Tibia D
+    400096: Tibia G
+    400098: Torse
+    2300000: DividedShield
+    2300002: FullShield
+    2300004: Shield
+    2300006: Stranger_Gun
+    2300008: Stranger_skull
+    3300000: DividedShield
+    3300002: FullShield
+    3300004: Shield
+    3300006: Stranger_Gun
+    3300008: Stranger_skull
+    4300000: R.Foot.001
+    4300002: R.Foot
+    4300004: DividedShield
+    4300006: FullShield
+    4300008: Shield
+    4300010: Stranger_skull
+    4300012: Stranger_Gun
+    4300014: Stranger_Skin
+    7400000: Armature|DeathScrap
+    7400002: Armature|RobotIdle
+    7400004: Armature|RobotWalk
+    7400006: Stranger_Armature|Stranger_Idle
+    7400008: Stranger_Armature|Stranger_Walk
+    9500000: //RootNode
+    13700000: R.Foot
+    13700002: R.Foot.001
+    13700004: Stranger_Skin
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
