@@ -5,151 +5,99 @@ using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
-    enum gameState {INTRODUCTION,VALIDPLAYERS,INTROGAME,GAME,ENDGAME}
-    gameState currentState;
-    gameState previousState;
-    List<Score> playerSocres = new List<Score>();
-    public GameObject player1Prefab,player2Prefab,player3Prefab,player4Prefab;
-    GameObject player1, player2, player3, player4;
-    bool playerSelected1 = false, playerSelected2 = false, playerSelected3 = false, playerSelected4 = false;
-
-    public Transform spawn1, spawn2, spawn3, spawn4;
-    int countPlayer,countPlayersAlive;
-    //GameObject gameObject;
-    void Awake ()
+    public GameObject AlienBearPrefab, StrangerPrefab, HunterPrefab, ScrapPrefab;
+    public Transform Spawn1, Spawn2, Spawn3, Spawn4;
+    GameObject AlienBear, Stranger, Hunter, Scrap;
+    bool AlienBearDeath = false, StrangerDeath = false, HunterDeath = false, ScrapDeath = false;
+    int alivePlayer;
+    
+    void Start()
     {
+        //Set les overlay de la scenne
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-      //  SceneManager.LoadScene("PlayerValidation", LoadSceneMode.Additive);
-        DontDestroyOnLoad(gameObject);
-        countPlayer = 0;
-        countPlayersAlive = 0;
-    }
+        
 
-    void Update()
-    {
+        //creation des scores
+        PlayerPrefs.SetInt("Stranger",0);
+        PlayerPrefs.SetInt("Alien Bear",0);
+        PlayerPrefs.SetInt("Scrap",0);
+        PlayerPrefs.SetInt("Hunter",0);
 
-    }
-
-    void StateManager()
-    {
-        switch (currentState)
+        // instanciation des joueurs dans la scene
+        if (PlayerPrefs.GetInt("Player1") != 0)
         {
-            case gameState.INTRODUCTION:
-                if (Input.GetButtonDown("Submit"))
-                {
-                    ChangeCurrentState(gameState.VALIDPLAYERS);
-
-                }
-
-                break;
-            case gameState.VALIDPLAYERS:
-
-
-                if (Input.GetButtonDown("Shoot1")&& !playerSelected1)
-                {
-                    playerSocres.Add(new Score(1));
-                    countPlayer++;
-                }
-                if (Input.GetButtonDown("Shoot2") && !playerSelected2)
-                {
-                    playerSocres.Add(new Score(2));
-                    countPlayer++;
-                }
-                if (Input.GetButtonDown("Shoot3") && !playerSelected3)
-                {
-                    playerSocres.Add(new Score(3));
-                    countPlayer++;
-                }
-                if (Input.GetButtonDown("Shoot4") && !playerSelected4)
-                {
-                    playerSocres.Add(new Score(4));
-                    countPlayer++;
-                }
-                if ((Input.GetButtonDown("Submit")) && countPlayer>= 2)
-                {
-                    ChangeCurrentState(gameState.INTROGAME);
-
-                }
-
-                break;
-            case gameState.INTROGAME:
-
-                if (countPlayer >= 2)
-                {
-                    foreach (Score score in playerSocres)
-                    {
-                        switch (score.playerName.ToString())
-                        {
-                            case "1":
-                                player1 = Instantiate(player1Prefab, spawn1.position, Quaternion.Euler(new Vector3(1, 0, 1))) as GameObject;
-                                break;
-                            case "2":
-                                player2 = Instantiate(player2Prefab, spawn2.position, Quaternion.Euler(new Vector3(1, 0, -1))) as GameObject;
-                                break;
-                            case "3":
-                                player3 = Instantiate(player3Prefab, spawn3.position, Quaternion.Euler(new Vector3(-1, 0, -1))) as GameObject;
-                                break;
-                            case "4":
-                                player4 = Instantiate(player4Prefab, spawn4.position, Quaternion.Euler(new Vector3(-1, 0, 1))) as GameObject;
-                                break;
-                        }
-                    }
-                    ChangeCurrentState(gameState.GAME); // pour passer au game
-                    countPlayersAlive = countPlayer;
-                }
-
-                break;
-            case gameState.GAME:
-                if (countPlayersAlive<=1)
-                {
-                    ChangeCurrentState(gameState.ENDGAME);
-                }
-                break;
-            case gameState.ENDGAME:
-
-                break;
-            default:
-                break;
+            Stranger = Instantiate(StrangerPrefab, Spawn1.position, Quaternion.Euler(new Vector3(0,Spawn1.rotation.y,0))) as GameObject;
+            Stranger.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player1");
+            alivePlayer++;
+        }
+        if (PlayerPrefs.GetInt("Player2") != 0)
+        {
+            AlienBear = Instantiate(StrangerPrefab, Spawn2.position, Quaternion.Euler(new Vector3(0, Spawn2.rotation.y, 0))) as GameObject;
+            AlienBear.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player2");
+            alivePlayer++;
+        }
+        if (PlayerPrefs.GetInt("Player3") != 0)
+        {
+            Scrap = Instantiate(StrangerPrefab, Spawn3.position, Quaternion.Euler(new Vector3(0, Spawn3.rotation.y, 0))) as GameObject;
+            Scrap.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player3");
+            alivePlayer++;
+        }
+        if (PlayerPrefs.GetInt("Player4") != 0)
+        {
+            Hunter = Instantiate(StrangerPrefab, Spawn4.position, Quaternion.Euler(new Vector3(0, Spawn4.rotation.y, 0))) as GameObject;
+            Hunter.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player4");
+            alivePlayer++;
         }
     }
 
-    void ChangeCurrentState(gameState myState)
+    void LateUpdate()
     {
-        previousState = currentState;
-        currentState = myState;
-    }
-    public void PlayerDeath(int playerIndex)
+        // Check fin de partie
+        if (alivePlayer <= 1)
         {
-
-            countPlayersAlive--;
+            if (!AlienBearDeath)
+            {
+                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear")+1);
+            }
+            if (!StrangerDeath)
+            {
+                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
+            }
+            if (!HunterDeath)
+            {
+                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
+            }
+            if (!ScrapDeath)
+            {
+                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
+            }
+            //applique l'overlay des scores
+            SceneManager.LoadScene("Score", LoadSceneMode.Additive);
         }
-    public void ResetGame()
-        {
-            countPlayer = 0;
-            countPlayersAlive = 0;
-            currentState = gameState.INTRODUCTION;
-            playerSocres.Clear();
     }
-
-    public void Reload()
+    
+    public void DeadPlayerNotifier(string playerName)
     {
-        countPlayersAlive = countPlayer;
-        currentState = gameState.GAME;
-    }
-
-
-    public class Score
-    {
-        public string playerName { get; set; }
-        public int playerScore { get; set; }
-
-
-        public Score(int playerIndex)
+        switch (playerName)
         {
-            playerName = string.Format("Player{0}", playerIndex);
-
+           case "Stranger":
+                StrangerDeath = true;
+                alivePlayer--;
+                break;
+            case "Alien Bear":
+                AlienBearDeath = true;
+                alivePlayer--;
+                break;
+            case "Scrap":
+                ScrapDeath = true;
+                alivePlayer--;
+                break;
+            case "Hunter":
+                HunterDeath = true;
+                alivePlayer--;
+                break;
         }
-
-
     }
 }
+
+    

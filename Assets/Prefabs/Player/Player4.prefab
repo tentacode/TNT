@@ -1225,6 +1225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 4
+  playerName: Hunter
   color: {r: 1, g: 0, b: 0, a: 0.734}
   lazerColor: {fileID: 2800000, guid: 89348a9124d7b46d09f4aade54dd1f82, type: 3}
 --- !u!114 &114000012030234374
