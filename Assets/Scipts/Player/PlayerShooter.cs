@@ -58,13 +58,7 @@ public class PlayerShooter : MonoBehaviour
     }
 
     bool IsFiring()
-    {
-        #if UNITY_STANDALONE_OSX
-        if (playerIndex <= 2) {
-            fireButton = string.Format("ShootMac{0}", playerIndex);
-        }
-        #endif
-      
+    {      
         return Input.GetButtonDown (fireButton);
     }
 }
