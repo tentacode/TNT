@@ -11,23 +11,16 @@ public class GameController : MonoBehaviour
     bool AlienBearDeath = false, StrangerDeath = false, HunterDeath = false, ScrapDeath = false;
     int alivePlayer;
     public int playerActive1, playerActive2, playerActive3, playerActive4;
+
+
+    public bool isGameEnd = false;
+
     void Start()
     {
         //Set les overlay de la scenne
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
         //applique l'overlay des scores
         SceneManager.LoadScene("Score", LoadSceneMode.Additive);
-
-        PlayerPrefs.SetInt("Player1", playerActive1);
-        PlayerPrefs.SetInt("Player2", playerActive2);
-        PlayerPrefs.SetInt("Player3", playerActive3);
-        PlayerPrefs.SetInt("Player4", playerActive4);
-
-        //creation des scores
-        PlayerPrefs.SetInt("Stranger",0);
-        PlayerPrefs.SetInt("Alien Bear",0);
-        PlayerPrefs.SetInt("Scrap",0);
-        PlayerPrefs.SetInt("Hunter",0);
 
         // instanciation des joueurs dans la scene
         if (PlayerPrefs.GetInt("Player1") != 0)
@@ -56,30 +49,48 @@ public class GameController : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (isGameEnd && Input.GetButtonDown ("Submit")) {
+            SceneManager.LoadScene ("Main");
+        } else if (isGameEnd && Input.GetButtonDown ("Cancel")) {
+            Application.LoadLevel (0); 
+        }
+    }
+
     void LateUpdate()
     {
-        Debug.Log(alivePlayer);
         // Check fin de partie
-        if (alivePlayer <= 1)
+        if (!isGameEnd && alivePlayer <= 1)
         {
-            if (!AlienBearDeath)
-            {
-                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear")+1);
-            }
-            if (!StrangerDeath)
-            {
-                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
-            }
-            if (!HunterDeath)
-            {
-                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
-            }
-            if (!ScrapDeath)
-            {
-                PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
-            }
-            Debug.Log("Fin de partie");
+            EndGame ();
         }
+    }
+
+    void EndGame()
+    {
+        isGameEnd = true;
+        if (!StrangerDeath && PlayerPrefs.GetInt("Player1") != 0)
+        {
+            PlayerPrefs.SetInt("Stranger", PlayerPrefs.GetInt("Stranger") + 1);
+        }
+        if (!AlienBearDeath && PlayerPrefs.GetInt("Player2") != 0)
+        {
+            PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear")+1);
+        }
+        if (!ScrapDeath && PlayerPrefs.GetInt("Player3") != 0)
+        {
+            PlayerPrefs.SetInt("Scrap", PlayerPrefs.GetInt("Scrap") + 1);
+        }
+        if (!HunterDeath && PlayerPrefs.GetInt("Player4") != 0)
+        {
+            PlayerPrefs.SetInt("Hunter", PlayerPrefs.GetInt("Hunter") + 1);
+        }
+
+        Debug.Log("Stranger" + PlayerPrefs.GetInt("Stranger"));
+        Debug.Log("Alien Bear" + PlayerPrefs.GetInt("Alien Bear"));
+        Debug.Log("Scrap" + PlayerPrefs.GetInt("Scrap"));
+        Debug.Log("Hunter" + PlayerPrefs.GetInt("Hunter"));
     }
     
     public void DeadPlayerNotifier(string playerName)

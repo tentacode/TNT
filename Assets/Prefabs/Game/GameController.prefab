@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000012174024746}
+  m_IsPrefabParent: 1
+--- !u!1 &1000012174024746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010132666178}
+  - 114: {fileID: 114000010158189348}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010132666178
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012174024746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 891, y: 496, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &114000010158189348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012174024746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a241bd4e9c0d4691b554750b9cbf65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlienBearPrefab: {fileID: 1000012753318898, guid: 148ae6b2e7ecd4fdd8840466004bbda2,
+    type: 2}
+  StrangerPrefab: {fileID: 1000012402952956, guid: 418e354e4bf5b410bb2cef0a964e6f01,
+    type: 2}
+  HunterPrefab: {fileID: 1000012394257046, guid: 2f0f4780f82b040b388a67cd4322cab7,
+    type: 2}
+  ScrapPrefab: {fileID: 1000014038935228, guid: 2c4ce094bc91c4a03ac9489b926ee28c,
+    type: 2}
+  Spawn1: {fileID: 0}
+  Spawn2: {fileID: 0}
+  Spawn3: {fileID: 0}
+  Spawn4: {fileID: 0}
+  playerActive1: 0
+  playerActive2: 0
+  playerActive3: 0
+  playerActive4: 0
