@@ -30,6 +30,16 @@ public class ValidationController : MonoBehaviour {
         playerReady3 = false;
         playerReady4 = false;
         start = false;
+
+        PlayerPrefs.SetInt ("Player1", 0);
+        PlayerPrefs.SetInt ("Player2", 0);
+        PlayerPrefs.SetInt ("Player3", 0);
+        PlayerPrefs.SetInt ("Player4", 0);
+
+        PlayerPrefs.SetInt ("Stranger", 0);
+        PlayerPrefs.SetInt ("Alien Bear", 0);
+        PlayerPrefs.SetInt ("Scrap", 0);
+        PlayerPrefs.SetInt ("Hunter", 0);
     }
 
 	// Update is called once per frame
@@ -70,7 +80,7 @@ public class ValidationController : MonoBehaviour {
         } else if (!gamepadReady4 && Input.GetKeyDown (string.Format("joystick 4 button {0}", buttonIndex))) {
             playerIndex = 4;
             gamepadReady4 = true;
-        } 
+        }
 
         return playerIndex;
     }
