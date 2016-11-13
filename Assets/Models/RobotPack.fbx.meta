@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: 4a576a47d95054f968d65ae0876251bf
+timeCreated: 1478987118
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: DividedShield
+    100004: FullShield
+    100006: Head
+    100008: Head_end
+    100010: LFoot
+    100012: LFoot_end
+    100014: Middle
+    100016: Middle_end
+    100018: R.Foot
+    100020: R.Foot.001
+    100022: RFoot
+    100024: RFoot_end
+    100026: //RootNode
+    400000: Armature
+    400002: DividedShield
+    400004: FullShield
+    400006: Head
+    400008: Head_end
+    400010: LFoot
+    400012: LFoot_end
+    400014: Middle
+    400016: Middle_end
+    400018: R.Foot
+    400020: R.Foot.001
+    400022: RFoot
+    400024: RFoot_end
+    400026: //RootNode
+    2300000: DividedShield
+    2300002: FullShield
+    3300000: DividedShield
+    3300002: FullShield
+    4300000: R.Foot.001
+    4300002: R.Foot
+    4300004: DividedShield
+    4300006: FullShield
+    7400000: Armature|RobotIdle
+    7400002: Armature|RobotWalk
+    9500000: //RootNode
+    13700000: R.Foot
+    13700002: R.Foot.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|RobotIdle
+      takeName: Armature|RobotIdle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Head
+        weight: 1
+      - path: Armature/Head/Head_end
+        weight: 1
+      - path: Armature/LFoot
+        weight: 1
+      - path: Armature/LFoot/LFoot_end
+        weight: 1
+      - path: Armature/Middle
+        weight: 1
+      - path: Armature/Middle/Middle_end
+        weight: 1
+      - path: Armature/RFoot
+        weight: 1
+      - path: Armature/RFoot/RFoot_end
+        weight: 1
+      - path: DividedShield
+        weight: 1
+      - path: FullShield
+        weight: 1
+      - path: R.Foot
+        weight: 1
+      - path: R.Foot.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|RobotWalk
+      takeName: Armature|RobotWalk
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Head
+        weight: 1
+      - path: Armature/Head/Head_end
+        weight: 1
+      - path: Armature/LFoot
+        weight: 1
+      - path: Armature/LFoot/LFoot_end
+        weight: 1
+      - path: Armature/Middle
+        weight: 1
+      - path: Armature/Middle/Middle_end
+        weight: 1
+      - path: Armature/RFoot
+        weight: 1
+      - path: Armature/RFoot/RFoot_end
+        weight: 1
+      - path: DividedShield
+        weight: 1
+      - path: FullShield
+        weight: 1
+      - path: R.Foot
+        weight: 1
+      - path: R.Foot.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

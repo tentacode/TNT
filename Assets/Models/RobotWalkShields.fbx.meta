@@ -1,15 +1,47 @@
 fileFormatVersion: 2
-guid: 372b16a9b1086a644ab98ac4df797882
-timeCreated: 1478943896
+guid: f9101a0ea3b45a44a9499fa0b9c62e62
+timeCreated: 1478985198
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cylinder.001
+    100000: Armature
+    100002: DividedShield
+    100004: FullShield
+    100006: Head
+    100008: Head_end
+    100010: LFoot
+    100012: LFoot_end
+    100014: Middle
+    100016: Middle_end
+    100018: R.Foot
+    100020: RFoot
+    100022: RFoot_end
+    100024: //RootNode
+    400000: Armature
+    400002: DividedShield
+    400004: FullShield
+    400006: Head
+    400008: Head_end
+    400010: LFoot
+    400012: LFoot_end
+    400014: Middle
+    400016: Middle_end
+    400018: R.Foot
+    400020: RFoot
+    400022: RFoot_end
+    400024: //RootNode
+    2300000: DividedShield
+    2300002: FullShield
+    3300000: DividedShield
+    3300002: FullShield
+    4300000: R.Foot
+    4300002: DividedShield
+    4300004: FullShield
+    7400000: Armature|RobotIdle
+    7400002: Armature|RobotWalk
+    9500000: //RootNode
+    13700000: R.Foot
   materials:
     importMaterials: 1
     materialName: 0
@@ -68,7 +100,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -174,7 +174,7 @@ GameObject:
   - 64: {fileID: 64000013340478746}
   m_Layer: 8
   m_Name: Shield
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,7 +356,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012071763638}
   - 95: {fileID: 95000010085346880}
-  - 54: {fileID: 54000013563397590}
   - 114: {fileID: 114000011165585496}
   - 114: {fileID: 114000013181003704}
   - 114: {fileID: 114000012535973008}
@@ -364,11 +363,11 @@ GameObject:
   - 136: {fileID: 136000011658922442}
   m_Layer: 8
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000012462660202
 GameObject:
   m_ObjectHideFlags: 1
@@ -739,10 +738,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012402952956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.64, z: 0}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: -37.38, y: 0.64, z: -14.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
   m_Children:
   - {fileID: 4000013449014792}
   - {fileID: 4000012374743788}
@@ -1177,21 +1176,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012898924850}
   m_Mesh: {fileID: 4300004, guid: 931a2fcc1413c415abe62a289606ee56, type: 3}
---- !u!54 &54000013563397590
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012402952956}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 84
-  m_CollisionDetection: 0
 --- !u!64 &64000013340478746
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -1200,7 +1184,7 @@ MeshCollider:
   m_GameObject: {fileID: 1000011234263870}
   m_Material: {fileID: 13400000, guid: eb29e04bf43cc9c4a9a91beba8debae1, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 931a2fcc1413c415abe62a289606ee56, type: 3}
@@ -1235,6 +1219,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 4000010204093366}
   lazerPrefab: {fileID: 1000012348529496, guid: 06b18d580e18b60468cc585d4580f5b7,
     type: 2}
+  audioManager: {fileID: 114000013497473042, guid: 7a458b79cbea2429abec443ce3d827d5,
+    type: 2}
 --- !u!114 &114000011165585496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1260,7 +1246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 1
-  lazerColor: {fileID: 2800000, guid: 6f28442469d9e4ba3a6631a310454542, type: 3}
+  color: {r: 0.11764706, g: 0.9254902, b: 1, a: 0.6627451}
+  lazerColor: {fileID: 2800000, guid: e3b292c7f1f694ccaa7e877df36396e8, type: 3}
 --- !u!114 &114000013181003704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1272,7 +1259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8ef7daeae8e09429594b1f9c4c63e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  life: 3
 --- !u!136 &136000011658922442
 CapsuleCollider:
   m_ObjectHideFlags: 1

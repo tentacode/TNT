@@ -149,7 +149,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 10000
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -167,8 +167,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lazerSpeed: 70
-  maxBounces: 20
+  maxBounces: 3
   playerIndex: 0
+  audioManager: {fileID: 114000013497473042, guid: 7a458b79cbea2429abec443ce3d827d5,
+    type: 2}
 --- !u!135 &135000012050199562
 SphereCollider:
   m_ObjectHideFlags: 1
