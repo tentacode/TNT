@@ -173,7 +173,7 @@ GameObject:
   - 23: {fileID: 23000013351554212}
   - 64: {fileID: 64000013340478746}
   m_Layer: 8
-  m_Name: Shield
+  m_Name: Player1Shield
   m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1274,6 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
+  shield: {fileID: 1000011234263870}
 --- !u!136 &136000011658922442
 CapsuleCollider:
   m_ObjectHideFlags: 1

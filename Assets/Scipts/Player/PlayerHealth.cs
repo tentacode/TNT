@@ -8,17 +8,19 @@ public class PlayerHealth : MonoBehaviour {
     int score;
     state etat;
     public int life;
+    public GameObject shield;
    
     void Start()
     {
         etat = state.alive;
         score = 0;
     }
-      void Update()
+
+    void Update()
     {
-        if (life<=0)
+        if (etat != state.dead && life<=0)
         {
-            ImDead();
+            Die();
         }
     }
 
@@ -32,10 +34,13 @@ public class PlayerHealth : MonoBehaviour {
        
     }
 
-    public void ImDead()
+    public void Die()
     {
-        etat = state.dead;
-        Destroy(gameObject);
+        GetComponent<Animator> ().SetTrigger ("Death");
+        GetComponent<PlayerShooter> ().enabled = false;
+        GetComponent<PlayerMovement> ().enabled = false;
+        Destroy (shield);
 
+        etat = state.dead;
     }
 }

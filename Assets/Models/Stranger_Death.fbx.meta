@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: bd00ce2a65e7e491ca6da432432eefd8
+timeCreated: 1479036799
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Alien_Armature
+    100002: Av bras D
+    100004: Av bras D_end
+    100006: Av bras G
+    100008: Av bras G_end
+    100010: Bassin
+    100012: Bone
+    100014: Bone.001
+    100016: Bone.002
+    100018: Bone.004
+    100020: Bone.005
+    100022: Bone.005_end
+    100024: Bone.006
+    100026: Bone.007
+    100028: Bone.007_end
+    100030: Bone.008
+    100032: Bone.009
+    100034: Bone.009_end
+    100036: Bone.010
+    100038: Bone.011
+    100040: Bone.012
+    100042: Bone.013
+    100044: Bone.014
+    100046: Bone.015
+    100048: Bone.016
+    100050: Bone.016_end
+    100052: Bone.017
+    100054: Bone.017_end
+    100056: Bone.019
+    100058: Bone.020
+    100060: Bone.020_end
+    100062: Bone.022
+    100064: Bone.023
+    100066: Bone.023_end
+    100068: Bras D
+    100070: Bras G
+    100072: Cape D bas
+    100074: Cape D bas_end
+    100076: Cape D haut
+    100078: Cape G Bas
+    100080: Cape G Bas_end
+    100082: Cape G Haut
+    100084: charp
+    100086: charp2
+    100088: chest
+    100090: Connect D
+    100092: Connect G
+    100094: Cuisse D
+    100096: Cuisse G
+    100098: Epaule D
+    100100: Epaule G
+    100102: Foot D
+    100104: Foot D_end
+    100106: Foot G
+    100108: Foot G_end
+    100110: foot.L
+    100112: foot.L_end
+    100114: foot.R
+    100116: foot.R_end
+    100118: forearm.L
+    100120: forearm.R
+    100122: hand.L
+    100124: hand.L_end
+    100126: hand.R
+    100128: hand.R_end
+    100130: Head
+    100132: head
+    100134: Head_end
+    100136: head_end
+    100138: hips
+    100140: Hunter_Armature
+    100142: left shoulder
+    100144: mid
+    100146: neck
+    100148: shin.L
+    100150: shin.R
+    100152: shoulder.L
+    100154: shoulder.R
+    100156: spine
+    100158: Stranger_Armature
+    100160: //RootNode
+    100162: thigh.L
+    100164: thigh.R
+    100166: Tibia D
+    100168: Tibia G
+    100170: Torse
+    100172: upper_arm.L
+    100174: upper_arm.R
+    400000: Alien_Armature
+    400002: Av bras D
+    400004: Av bras D_end
+    400006: Av bras G
+    400008: Av bras G_end
+    400010: Bassin
+    400012: Bone
+    400014: Bone.001
+    400016: Bone.002
+    400018: Bone.004
+    400020: Bone.005
+    400022: Bone.005_end
+    400024: Bone.006
+    400026: Bone.007
+    400028: Bone.007_end
+    400030: Bone.008
+    400032: Bone.009
+    400034: Bone.009_end
+    400036: Bone.010
+    400038: Bone.011
+    400040: Bone.012
+    400042: Bone.013
+    400044: Bone.014
+    400046: Bone.015
+    400048: Bone.016
+    400050: Bone.016_end
+    400052: Bone.017
+    400054: Bone.017_end
+    400056: Bone.019
+    400058: Bone.020
+    400060: Bone.020_end
+    400062: Bone.022
+    400064: Bone.023
+    400066: Bone.023_end
+    400068: Bras D
+    400070: Bras G
+    400072: Cape D bas
+    400074: Cape D bas_end
+    400076: Cape D haut
+    400078: Cape G Bas
+    400080: Cape G Bas_end
+    400082: Cape G Haut
+    400084: charp
+    400086: charp2
+    400088: chest
+    400090: Connect D
+    400092: Connect G
+    400094: Cuisse D
+    400096: Cuisse G
+    400098: Epaule D
+    400100: Epaule G
+    400102: Foot D
+    400104: Foot D_end
+    400106: Foot G
+    400108: Foot G_end
+    400110: foot.L
+    400112: foot.L_end
+    400114: foot.R
+    400116: foot.R_end
+    400118: forearm.L
+    400120: forearm.R
+    400122: hand.L
+    400124: hand.L_end
+    400126: hand.R
+    400128: hand.R_end
+    400130: Head
+    400132: head
+    400134: Head_end
+    400136: head_end
+    400138: hips
+    400140: Hunter_Armature
+    400142: left shoulder
+    400144: mid
+    400146: neck
+    400148: shin.L
+    400150: shin.R
+    400152: shoulder.L
+    400154: shoulder.R
+    400156: spine
+    400158: Stranger_Armature
+    400160: //RootNode
+    400162: thigh.L
+    400164: thigh.R
+    400166: Tibia D
+    400168: Tibia G
+    400170: Torse
+    400172: upper_arm.L
+    400174: upper_arm.R
+    7400000: Hunter_Armature|Hunter_Idle
+    7400002: Hunter_Armature|Hunter_Walk
+    7400004: Stranger_Armature|Stranger_DEATH
+    7400006: Stranger_Armature|Stranger_Idle
+    7400008: Stranger_Armature|Stranger_Walk
+    7400010: Stranger_Armature|Stranger_WalkLeft
+    7400012: Alien_Armature|Alien_Walk
+    7400014: Alien_Armature|AlienIdle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
