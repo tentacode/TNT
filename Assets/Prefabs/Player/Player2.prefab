@@ -376,6 +376,7 @@ GameObject:
   - 114: {fileID: 114000010110272736}
   - 114: {fileID: 114000011577880562}
   - 136: {fileID: 136000011836206180}
+  - 114: {fileID: 114000013246735722}
   m_Layer: 8
   m_Name: Player2
   m_TagString: Untagged
@@ -774,7 +775,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012753318898}
   m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 28.17, y: 0, z: -15.39}
+  m_LocalPosition: {x: 34, y: 0, z: -10.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
   m_Children:
@@ -1049,7 +1050,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8ef7daeae8e09429594b1f9c4c63e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
+--- !u!114 &114000013246735722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012753318898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd7acddea4d2434dbf0a706c3922d28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xBoundary: 35
+  zBoundary: 15
 --- !u!136 &136000011836206180
 CapsuleCollider:
   m_ObjectHideFlags: 1
