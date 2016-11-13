@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/UI/PauseMenu.unity
   - enabled: 1
     path: Assets/Scenes/PlayerValidation.unity
+  - enabled: 1
+    path: Assets/Scenes/Score.unity
