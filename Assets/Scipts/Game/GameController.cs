@@ -25,25 +25,25 @@ public class GameController : MonoBehaviour
         // instanciation des joueurs dans la scene
         if (PlayerPrefs.GetInt("Player1") != 0)
         {
-            Stranger = Instantiate(StrangerPrefab, Spawn1.position, Quaternion.Euler(new Vector3(0,Spawn1.rotation.y,0))) as GameObject;
+            Stranger = Instantiate(StrangerPrefab, Spawn1.position, Quaternion.Euler(new Vector3(0,113.5f,0))) as GameObject;
             Stranger.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player1");
             alivePlayer++;
         }
         if (PlayerPrefs.GetInt("Player2") != 0)
         {
-            AlienBear = Instantiate(AlienBearPrefab, Spawn2.position, Quaternion.Euler(new Vector3(0, Spawn2.rotation.y, 0))) as GameObject;
+            AlienBear = Instantiate(AlienBearPrefab, Spawn2.position, Quaternion.Euler(new Vector3(0, 45f, 0))) as GameObject;
             AlienBear.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player2");
             alivePlayer++;
         }
         if (PlayerPrefs.GetInt("Player3") != 0)
         {
-            Scrap = Instantiate(ScrapPrefab, Spawn3.position, Quaternion.Euler(new Vector3(0, Spawn3.rotation.y, 0))) as GameObject;
+            Scrap = Instantiate(ScrapPrefab, Spawn3.position, Quaternion.Euler(new Vector3(0, 225f, 0))) as GameObject;
             Scrap.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player3");
             alivePlayer++;
         }
         if (PlayerPrefs.GetInt("Player4") != 0)
         {
-            Hunter = Instantiate(HunterPrefab, Spawn4.position, Quaternion.Euler(new Vector3(0, Spawn4.rotation.y, 0))) as GameObject;
+            Hunter = Instantiate(HunterPrefab, Spawn4.position, Quaternion.Euler(new Vector3(0, -45, 0))) as GameObject;
             Hunter.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player4");
             alivePlayer++;
         }
