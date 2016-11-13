@@ -438,10 +438,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013182440776}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.19, y: 5.32, z: 3.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010774085308}
   m_RootOrder: 4
@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b25b990ff14d47ac95446042789050f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIndex: 3
+  playerIndex: 1
   playerName: Scrap
   color: {r: 1, g: 0.80689657, b: 0, a: 0.672}
   lazerColor: {fileID: 2800000, guid: bc0848a7251d14566ac3584f99e709a3, type: 3}
