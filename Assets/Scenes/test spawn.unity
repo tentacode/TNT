@@ -42,7 +42,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -144,6 +144,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4000010774085308, guid: 2c4ce094bc91c4a03ac9489b926ee28c, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c4ce094bc91c4a03ac9489b926ee28c, type: 2}
   m_IsPrefabParent: 0
@@ -210,24 +214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!1 &329162127 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000010191095580, guid: 2c4ce094bc91c4a03ac9489b926ee28c,
-    type: 2}
-  m_PrefabInternal: {fileID: 145619722}
---- !u!114 &329162128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 329162127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd7acddea4d2434dbf0a706c3922d28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xBoundary: 35
-  zBoundary: 15
 --- !u!1 &370806098
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +225,7 @@ GameObject:
   - 114: {fileID: 370806099}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -255,6 +241,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a241bd4e9c0d4691b554750b9cbf65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AlienBearPrefab: {fileID: 0}
+  StrangerPrefab: {fileID: 0}
+  HunterPrefab: {fileID: 0}
+  ScrapPrefab: {fileID: 0}
+  Spawn1: {fileID: 0}
+  Spawn2: {fileID: 0}
+  Spawn3: {fileID: 0}
+  Spawn4: {fileID: 0}
 --- !u!4 &370806100
 Transform:
   m_ObjectHideFlags: 0

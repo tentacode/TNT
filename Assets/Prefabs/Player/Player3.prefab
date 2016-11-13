@@ -572,6 +572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerIndex: 1
+  playerName: Scrap
   color: {r: 1, g: 0.80689657, b: 0, a: 0.672}
   lazerColor: {fileID: 2800000, guid: bc0848a7251d14566ac3584f99e709a3, type: 3}
 --- !u!114 &114000010960420476
