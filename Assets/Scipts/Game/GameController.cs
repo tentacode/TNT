@@ -18,10 +18,10 @@ public class GameController : MonoBehaviour
         //applique l'overlay des scores
         SceneManager.LoadScene("Score", LoadSceneMode.Additive);
 
-        PlayerPrefs.SetInt("Player1", 0);
-        PlayerPrefs.SetInt("Player2", 0);
-        PlayerPrefs.SetInt("Player3", 0);
-        PlayerPrefs.SetInt("Player4", 0);
+        PlayerPrefs.SetInt("Player1", playerActive1);
+        PlayerPrefs.SetInt("Player2", playerActive2);
+        PlayerPrefs.SetInt("Player3", playerActive3);
+        PlayerPrefs.SetInt("Player4", playerActive4);
 
         //creation des scores
         PlayerPrefs.SetInt("Stranger",0);
@@ -38,19 +38,19 @@ public class GameController : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("Player2") != 0)
         {
-            AlienBear = Instantiate(StrangerPrefab, Spawn2.position, Quaternion.Euler(new Vector3(0, Spawn2.rotation.y, 0))) as GameObject;
+            AlienBear = Instantiate(AlienBearPrefab, Spawn2.position, Quaternion.Euler(new Vector3(0, Spawn2.rotation.y, 0))) as GameObject;
             AlienBear.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player2");
             alivePlayer++;
         }
         if (PlayerPrefs.GetInt("Player3") != 0)
         {
-            Scrap = Instantiate(StrangerPrefab, Spawn3.position, Quaternion.Euler(new Vector3(0, Spawn3.rotation.y, 0))) as GameObject;
+            Scrap = Instantiate(ScrapPrefab, Spawn3.position, Quaternion.Euler(new Vector3(0, Spawn3.rotation.y, 0))) as GameObject;
             Scrap.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player3");
             alivePlayer++;
         }
         if (PlayerPrefs.GetInt("Player4") != 0)
         {
-            Hunter = Instantiate(StrangerPrefab, Spawn4.position, Quaternion.Euler(new Vector3(0, Spawn4.rotation.y, 0))) as GameObject;
+            Hunter = Instantiate(HunterPrefab, Spawn4.position, Quaternion.Euler(new Vector3(0, Spawn4.rotation.y, 0))) as GameObject;
             Hunter.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player4");
             alivePlayer++;
         }
@@ -58,6 +58,7 @@ public class GameController : MonoBehaviour
 
     void LateUpdate()
     {
+        Debug.Log(alivePlayer);
         // Check fin de partie
         if (alivePlayer <= 1)
         {
@@ -77,7 +78,7 @@ public class GameController : MonoBehaviour
             {
                 PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
             }
-           
+            Debug.Log("Fin de partie");
         }
     }
     
