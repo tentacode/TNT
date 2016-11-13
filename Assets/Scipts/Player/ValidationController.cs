@@ -20,7 +20,7 @@ public class ValidationController : MonoBehaviour {
         img4 = false;
         start = false;
     }
-	
+
 	// Update is called once per frame
 	void Update () {
         if (Input.GetButtonDown("Shoot1"))
@@ -72,11 +72,11 @@ public class ValidationController : MonoBehaviour {
         }
         if (start == true)
         {
-            if (Input.GetButtonDown("Start1") || Input.GetButtonDown("Start2") || Input.GetButtonDown("Start3") || Input.GetButtonDown("Start4") )
+            if (Input.GetButtonDown("Submit"))
             {
 
             }
         }
-        
+
     }
 }

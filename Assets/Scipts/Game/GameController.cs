@@ -24,10 +24,10 @@ public class GameController : MonoBehaviour
         countPlayer = 0;
         countPlayersAlive = 0;
     }
-    
+
     void Update()
     {
-       
+
     }
 
     void StateManager()
@@ -35,16 +35,15 @@ public class GameController : MonoBehaviour
         switch (currentState)
         {
             case gameState.INTRODUCTION:
-                if (Input.GetButtonDown("Start1")|| Input.GetButtonDown("Start2")
-                    || Input.GetButtonDown("Start3")|| Input.GetButtonDown("Start4"))
+                if (Input.GetButtonDown("Submit"))
                 {
                     ChangeCurrentState(gameState.VALIDPLAYERS);
-                   
+
                 }
-                
+
                 break;
             case gameState.VALIDPLAYERS:
-                
+
 
                 if (Input.GetButtonDown("Shoot1")&& !playerSelected1)
                 {
@@ -66,13 +65,12 @@ public class GameController : MonoBehaviour
                     playerSocres.Add(new Score(4));
                     countPlayer++;
                 }
-                if ((Input.GetButtonDown("Start1") || Input.GetButtonDown("Start2")
-                  || Input.GetButtonDown("Start3") || Input.GetButtonDown("Start4")) && countPlayer>= 2)
+                if ((Input.GetButtonDown("Submit")) && countPlayer>= 2)
                 {
                     ChangeCurrentState(gameState.INTROGAME);
 
                 }
-                
+
                 break;
             case gameState.INTROGAME:
 
@@ -108,7 +106,7 @@ public class GameController : MonoBehaviour
                 }
                 break;
             case gameState.ENDGAME:
-                
+
                 break;
             default:
                 break;
@@ -122,7 +120,7 @@ public class GameController : MonoBehaviour
     }
     public void PlayerDeath(int playerIndex)
         {
-       
+
             countPlayersAlive--;
         }
     public void ResetGame()
