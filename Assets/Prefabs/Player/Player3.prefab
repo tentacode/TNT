@@ -586,6 +586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8ef7daeae8e09429594b1f9c4c63e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 114000013497473042, guid: 7a458b79cbea2429abec443ce3d827d5,
+    type: 2}
   life: 1
   shield: {fileID: 1000012926473692}
 --- !u!114 &114000012560308954

@@ -14,6 +14,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip fireLazer2;
     public AudioClip fireLazer3;
     public AudioClip fireLazer4;
+    public AudioClip StrangerDeath;
+    public AudioClip AlienBearDeath;
+    public AudioClip Scrap;
+    public AudioClip Hunter;
     public AudioClip bounceWall;
     public AudioClip bounceShield;
     public AudioClip reload;
