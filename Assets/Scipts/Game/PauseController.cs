@@ -13,7 +13,12 @@ public class PauseController : MonoBehaviour
 	
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        if (isPaused && Input.GetButtonDown("Cancel")) {
+            Time.timeScale = 1;
+            Application.LoadLevel (0); 
+        }
+
+        if (Input.GetButtonDown("Submit")) {
             TogglePause ();
         }
 	}
