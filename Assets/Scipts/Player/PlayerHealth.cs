@@ -9,9 +9,11 @@ public class PlayerHealth : MonoBehaviour {
     state etat;
     public int life;
     public GameObject shield;
+    GameObject gameControler;
    
     void Start()
     {
+        gameControler = GameObject.FindGameObjectWithTag("GameController");
         etat = state.alive;
         score = 0;
     }
@@ -40,6 +42,8 @@ public class PlayerHealth : MonoBehaviour {
         GetComponent<PlayerShooter> ().enabled = false;
         GetComponent<PlayerMovement> ().enabled = false;
         Destroy (shield);
+
+        gameControler.GetComponent<GameController>().DeadPlayerNotifier(GetComponent<PlayerIdentity>().playerName);
 
         etat = state.dead;
     }

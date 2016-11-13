@@ -10,12 +10,18 @@ public class GameController : MonoBehaviour
     GameObject AlienBear, Stranger, Hunter, Scrap;
     bool AlienBearDeath = false, StrangerDeath = false, HunterDeath = false, ScrapDeath = false;
     int alivePlayer;
-    
+    public int playerActive1, playerActive2, playerActive3, playerActive4;
     void Start()
     {
         //Set les overlay de la scenne
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-        
+        //applique l'overlay des scores
+        SceneManager.LoadScene("Score", LoadSceneMode.Additive);
+
+        PlayerPrefs.SetInt("Player1", 0);
+        PlayerPrefs.SetInt("Player2", 0);
+        PlayerPrefs.SetInt("Player3", 0);
+        PlayerPrefs.SetInt("Player4", 0);
 
         //creation des scores
         PlayerPrefs.SetInt("Stranger",0);
@@ -71,8 +77,7 @@ public class GameController : MonoBehaviour
             {
                 PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear") + 1);
             }
-            //applique l'overlay des scores
-            SceneManager.LoadScene("Score", LoadSceneMode.Additive);
+           
         }
     }
     
