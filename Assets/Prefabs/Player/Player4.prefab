@@ -1267,6 +1267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
+  shield: {fileID: 1000013969736032}
 --- !u!136 &136000010624911098
 CapsuleCollider:
   m_ObjectHideFlags: 1
