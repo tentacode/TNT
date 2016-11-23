@@ -13,6 +13,12 @@ public class IntroMusicManager : MonoBehaviour
             Destroy (gameObject);
         } else {
             DontDestroyOnLoad (gameObject);
+            Invoke ("Play", 1.0f);
         }
 	}
+
+    void Play()
+    {
+        GetComponent<AudioSource> ().Play ();
+    }
 }

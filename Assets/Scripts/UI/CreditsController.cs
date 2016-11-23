@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class CreditsController : MonoBehaviour {    
     List<string> iList = new List<string>();
-    
     int indexCredit;
-    // Use this for initialization
-    void Start () {
+
+    void Start ()
+    {
         indexCredit = 0;
         
         iList.Add("Credits - Antoine - Music and Sound Design");
@@ -17,25 +17,19 @@ public class CreditsController : MonoBehaviour {
         iList.Add("Credits - Gabriel - Code");
         iList.Add("Credits - Kevin - Game Design and Graphics");
         iList.Add("Credits - Yendhi - Code");
+
         Reload();
-        
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
     void Reload()
     {
-        if (indexCredit <= 5)
-        {
-        GetComponent<Text>().text = iList[indexCredit];
-        indexCredit++;
-        }
-        else
-        {
+        if (indexCredit > iList.Count - 1) {
             indexCredit = 0;
         }
-        Invoke("Reload", 1.9f);
+
+        GetComponent<Text>().text = iList[indexCredit];
+        indexCredit++;
+
+        Invoke("Reload", 2.0f);
     }
 }
