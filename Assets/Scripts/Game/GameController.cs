@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
         if (isGameEnd && Input.GetButtonDown ("Submit")) {
             SceneManager.LoadScene ("Main");
         } else if (isGameEnd && Input.GetButtonDown ("Cancel")) {
-            Application.LoadLevel (0); 
+            SceneManager.LoadScene ("Title");
         }
     }
 
@@ -90,11 +90,6 @@ public class GameController : MonoBehaviour
 
         score.SetActive (true);
         score.GetComponent<ScoreManager> ().Refresh ();
-
-        Debug.Log("Stranger" + PlayerPrefs.GetInt("Stranger"));
-        Debug.Log("Alien Bear" + PlayerPrefs.GetInt("Alien Bear"));
-        Debug.Log("Scrap" + PlayerPrefs.GetInt("Scrap"));
-        Debug.Log("Hunter" + PlayerPrefs.GetInt("Hunter"));
     }
     
     public void DeadPlayerNotifier(string playerName)

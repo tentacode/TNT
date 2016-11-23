@@ -5,7 +5,6 @@ public class PlayerHealth : MonoBehaviour {
  
     enum state{ alive, dead}
     enum mode { introduction,countdownBegin,menu,play,pause,endGame} 
-    int score;
     string playerName;
     state etat;
     public AudioManager audioManager;
@@ -18,7 +17,6 @@ public class PlayerHealth : MonoBehaviour {
         playerName = GetComponent<PlayerIdentity>().playerName;
         gameControler = GameObject.FindGameObjectWithTag("GameController");
         etat = state.alive;
-        score = 0;
     }
 
     void Update()

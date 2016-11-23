@@ -3,9 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class CreditsController : MonoBehaviour {
-
-    private float RELOAD_TIME = 1.7f;
+public class CreditsController : MonoBehaviour {    
     List<string> iList = new List<string>();
     
     int indexCredit;

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PauseController : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class PauseController : MonoBehaviour
 
         if (isPaused && Input.GetButtonDown("Cancel")) {
             Time.timeScale = 1;
-            Application.LoadLevel (0); 
+            SceneManager.LoadScene ("Title");
         }
 
         if (Input.GetButtonDown("Submit")) {
