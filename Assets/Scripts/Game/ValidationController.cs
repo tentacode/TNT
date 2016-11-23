@@ -9,8 +9,16 @@ public class ValidationController : MonoBehaviour {
     bool playerReady1, playerReady2, playerReady3, playerReady4, start;
     bool gamepadReady1, gamepadReady2, gamepadReady3, gamepadReady4;
 
+    public Fader overlay;
+
+    void Nil()
+    {
+    }
+
 	void Start ()
     {
+        overlay.Fade (new Color(0,0,0,0), 4.0f, Nil);
+
         // text "Ready" par player
         image1.SetActive(false);
         image2.SetActive(false);
