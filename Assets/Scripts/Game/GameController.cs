@@ -19,6 +19,9 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
+        Time.fixedDeltaTime = 0.02F;
+
         score.SetActive (false);
         //Set les overlay de la scenne
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);

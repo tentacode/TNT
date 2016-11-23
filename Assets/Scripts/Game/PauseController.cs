@@ -18,7 +18,6 @@ public class PauseController : MonoBehaviour
 
 	void Start ()
     {
-        Debug.Log (Time.fixedDeltaTime);
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         pauseCanvas.SetActive (false);
         Invoke ("PauseActive", 2.0f);
