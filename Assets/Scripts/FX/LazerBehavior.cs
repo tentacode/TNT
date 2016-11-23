@@ -9,6 +9,8 @@ public class LazerBehavior : MonoBehaviour {
     private Rigidbody rgbd;
     private int bounceCounter;
     private bool hasCollided = false;
+    private bool isMuted = false;
+
     public int playerIndex;
 
     public AudioManager audioManager;
@@ -31,11 +33,14 @@ public class LazerBehavior : MonoBehaviour {
             clip = audioManager.fireLazer4;
             break;
         default:
-            Debug.LogError("No player index");
+            clip = null;
             break;
         }
 
-        audioManager.PlayClip (clip, transform.position);
+        if (clip != null) {
+            audioManager.PlayClip (clip, transform.position);
+        }
+
         rgbd = GetComponent<Rigidbody> ();
         rgbd.AddForce (transform.forward * lazerSpeed, ForceMode.Impulse); 
 
@@ -61,9 +66,9 @@ public class LazerBehavior : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Wall") {
+        if (!isMuted && collision.collider.tag == "Wall") {
             audioManager.PlayClip (audioManager.bounceWall, collision.collider.transform.position, 0.3f);
-        } else if (collision.collider.tag == "Shield") {
+        } else if (!isMuted && collision.collider.tag == "Shield") {
             audioManager.PlayClip (audioManager.bounceShield, collision.collider.transform.position);
         }
 
@@ -72,5 +77,10 @@ public class LazerBehavior : MonoBehaviour {
         }
 
         hasCollided = true;
+    }
+
+    public void Mute()
+    {
+        isMuted = true;
     }
 }

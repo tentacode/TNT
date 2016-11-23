@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ae7e0f53563224ab8ea76ecd9656d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lazerSpeed: 70
+  lazerSpeed: 60
   maxBounces: 3
   playerIndex: 0
   audioManager: {fileID: 114000013497473042, guid: 7a458b79cbea2429abec443ce3d827d5,
