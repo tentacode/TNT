@@ -6,6 +6,15 @@ public class TitleController : MonoBehaviour
 {
     public Fader overlay;
 
+    void Nil ()
+    {
+    }
+
+    void Start()
+    {
+        overlay.Fade (new Color(0,0,0,0), 5.0f, Nil);
+    }
+
 	void Update ()
     {
         if (Input.GetButtonDown ("Submit")) {

@@ -13,3 +13,4 @@ Première version de la jam.
 * Ménage du code et de l'architecture du projet.
 * Suppression de certains fichiers non utilisés.
 * Réduction de la vitesse des lazers de 70 à 60.
+* Fade in / fade out entre le titre, le choix des joueurs et la partie.

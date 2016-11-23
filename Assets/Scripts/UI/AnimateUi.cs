@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class AnimatePressStart : MonoBehaviour
+public class AnimateUi : MonoBehaviour
 {
     private RectTransform rect;
     public float amplitude = 20.0f;
@@ -10,7 +10,7 @@ public class AnimatePressStart : MonoBehaviour
     private int direction = 1;
     private Vector2 destination;
 
-	void Start ()
+	void Awake ()
     {
         SetDestination ();
         rect = GetComponent<RectTransform> ();
@@ -20,7 +20,7 @@ public class AnimatePressStart : MonoBehaviour
     {
         rect.anchoredPosition = Vector2.Lerp(rect.anchoredPosition, destination, Time.deltaTime * speed);
 
-        if (Mathf.Abs(rect.anchoredPosition.y - destination.y) <= 0.1f) {
+        if (Mathf.Abs(rect.anchoredPosition.y - destination.y) <= 0.05f) {
             direction = -direction;
             SetDestination ();
         }

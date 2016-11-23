@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ValidationController : MonoBehaviour {
 
-    public GameObject image1,image2,image3,image4,text1,press1,press2,press3,press4;
+    public GameObject image1,image2,image3,image4,pressStart,press1,press2,press3,press4;
     int countPlayer;
     bool playerReady1, playerReady2, playerReady3, playerReady4, start;
     bool gamepadReady1, gamepadReady2, gamepadReady3, gamepadReady4;
@@ -26,7 +26,7 @@ public class ValidationController : MonoBehaviour {
         image4.SetActive(false);
 
         // texte "Press start" pour commencer
-        text1.SetActive(false);
+        pressStart.SetActive(false);
 
         // images des boutons XBOX
         press1.SetActive(true);
@@ -62,19 +62,29 @@ public class ValidationController : MonoBehaviour {
 
         if (countPlayer>=2)
         {
-            text1.SetActive(true);
+            pressStart.SetActive(true);
             start = true;
         }
 
         if (Input.GetButtonDown("Cancel"))
         {
-            SceneManager.LoadScene("Title");
+            overlay.Fade (Color.black, 4.0f, GoToTitle);
         }
 
         if (start && Input.GetButtonDown("Submit"))
         {
-            SceneManager.LoadScene("Main");
+            overlay.Fade (Color.black, 5.0f, StartGame);
         }
+    }
+
+    void GoToTitle()
+    {
+        SceneManager.LoadScene("Title");
+    }
+
+    void StartGame()
+    {
+        SceneManager.LoadScene("Main");
     }
 
     int GetPlayerIndexButton(int buttonIndex)
