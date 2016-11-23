@@ -26,6 +26,10 @@ public class PlayerMovement : MonoBehaviour {
         animator.SetFloat ("Speed", mouvment.magnitude);
         transform.position = (transform.position + mouvment * speed * Time.deltaTime);
 
+        if (Time.timeScale < 0.95f) {
+            return;
+        }
+
         float rotateX = Input.GetAxis(GetPlayerAxis("RotateX"));
         float rotateY = Input.GetAxis(GetPlayerAxis("RotateY"));
 
