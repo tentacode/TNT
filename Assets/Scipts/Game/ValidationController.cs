@@ -8,17 +8,19 @@ public class ValidationController : MonoBehaviour {
     int countPlayer;
     bool playerReady1, playerReady2, playerReady3, playerReady4, start;
     bool gamepadReady1, gamepadReady2, gamepadReady3, gamepadReady4;
-	// Use this for initialization
-	void Start () {
-        //image du player
+
+	void Start ()
+    {
+        // text "Ready" par player
         image1.SetActive(false);
         image2.SetActive(false);
         image3.SetActive(false);
         image4.SetActive(false);
-        // texte start pour commencer
+
+        // texte "Press start" pour commencer
         text1.SetActive(false);
 
-        //le texte press button
+        // images des boutons XBOX
         press1.SetActive(true);
         press2.SetActive(true);
         press3.SetActive(true);
@@ -43,7 +45,8 @@ public class ValidationController : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         CheckPlayer1();
         CheckPlayer2();
         CheckPlayer3();
@@ -54,6 +57,7 @@ public class ValidationController : MonoBehaviour {
             text1.SetActive(true);
             start = true;
         }
+
         if (Input.GetButtonDown("Cancel"))
         {
             SceneManager.LoadScene("Title");

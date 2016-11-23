@@ -24,6 +24,9 @@ public class AudioManager : MonoBehaviour
 
 	void Start ()
 	{
+
+        Destroy(GameObject.Find("IntroMusicManager"));
+
 		musicSource.clip = gameMusic;
         musicSource.volume = 0.1f;
 		musicSource.Play ();
