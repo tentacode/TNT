@@ -46,10 +46,18 @@ public class PauseController : MonoBehaviour
             SceneManager.LoadScene ("Title");
         }
 
-        if (Input.GetButtonDown("Submit")) {
+        if (IsPauseButton()) {
             TogglePause ();
         }
 	}
+
+    bool IsPauseButton()
+    {
+        #if UNITY_STANDALONE_OSX
+            return Input.GetKeyDown ("joystick button 9");
+        #endif
+        return Input.GetKeyDown ("joystick button 7");
+    }
 
     void FixedUpdate()
     {

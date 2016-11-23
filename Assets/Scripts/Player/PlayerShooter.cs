@@ -59,6 +59,10 @@ public class PlayerShooter : MonoBehaviour
 
     bool IsFiring()
     {      
+        if (Time.timeScale < 0.95f) {
+            return false;
+        }
+
         return Input.GetButtonDown (fireButton);
     }
 }

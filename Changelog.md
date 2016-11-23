@@ -14,4 +14,5 @@ Première version de la jam.
 * Suppression de certains fichiers non utilisés.
 * Réduction de la vitesse des lazers de 70 à 60.
 * Fade in / fade out entre le titre, le choix des joueurs et la partie.
-* Slow mo pause effect
+* SLOW MO PAUSE EFFECT.
+* Empêcher de faire pause en cliquant sur le joystick.
