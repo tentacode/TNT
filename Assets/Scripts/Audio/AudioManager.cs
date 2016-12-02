@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
     public GameObject audioSourcePrefab;
     public AudioSource musicSource;
+
+    [Header("Mixer groups")]
+    public AudioMixerGroup masterMixerGroup;
+    public AudioMixerGroup voicseMixerGroup;
 
     [Header("Musics")]
     public AudioClip introMusic;
@@ -62,7 +67,7 @@ public class AudioManager : MonoBehaviour
         musicSource.Play ();
     }
 
-    public void PlayClip(AudioClip clip, Vector3 position, float volume = 1.0f, float pitch = 1.0f)
+    public void PlayClip(AudioClip clip, Vector3 position, float volume = 1.0f, float pitch = 1.0f, AudioMixerGroup mixerGroup = null)
 	{
 		GameObject sourceGameObject = (GameObject)Instantiate (
 			audioSourcePrefab, 
@@ -74,6 +79,7 @@ public class AudioManager : MonoBehaviour
         source.pitch = pitch;
         source.volume = volume;
 		source.clip = clip;
+        source.outputAudioMixerGroup = (mixerGroup == null) ? masterMixerGroup : mixerGroup;
 		source.Play ();
 
 		Destroy (sourceGameObject, clip.length + 0.1f);

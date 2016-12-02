@@ -23,3 +23,4 @@ Première version de la jam.
 * Subtile réduction du volume des lazers et variation aléatoire du pitch.
 * Cacher le curseur dans chacune des scènes.
 * Remettre les murs qui avaient disparus.
+* Augmentation du volume des sons de death.

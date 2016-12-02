@@ -158,6 +158,9 @@ MonoBehaviour:
   audioSourcePrefab: {fileID: 1000011129818344, guid: e3bac5243f9994fe08337a46cbd53520,
     type: 2}
   musicSource: {fileID: 82000012294679510}
+  masterMixerGroup: {fileID: 24300001, guid: 62d75d5e748a642529e296e5146135c0, type: 2}
+  voicseMixerGroup: {fileID: 243000012620165658, guid: 62d75d5e748a642529e296e5146135c0,
+    type: 2}
   introMusic: {fileID: 8300000, guid: e95395f009d3e8245a4f7ed5e6054252, type: 3}
   gameMusic: {fileID: 8300000, guid: 989e94d0e582716468040b818b190ed0, type: 3}
   fireLazer1: {fileID: 8300000, guid: 1b45b648415414aadb5180353474ee1f, type: 3}

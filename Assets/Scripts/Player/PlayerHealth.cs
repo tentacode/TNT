@@ -44,16 +44,17 @@ public class PlayerHealth : MonoBehaviour {
         switch (playerName)
         {
             case "Stranger":
-                audioManager.PlayClip(audioManager.StrangerDeath, transform.position);
+            audioManager.PlayClip(audioManager.StrangerDeath, transform.position, 1, 1, audioManager.voicseMixerGroup);
                 break;
             case "Alien Bear":
-                audioManager.PlayClip(audioManager.AlienBearDeath, transform.position);
+                audioManager.PlayClip(audioManager.AlienBearDeath, transform.position, 1, 1, audioManager.voicseMixerGroup);
                 break;
             case "Scrap":
-                audioManager.PlayClip(audioManager.Scrap, transform.position);
+                Debug.Log ("Scrap died");
+                audioManager.PlayClip(audioManager.Scrap, transform.position, 1, 1, audioManager.voicseMixerGroup);
                 break;
             case "Hunter":
-                audioManager.PlayClip(audioManager.Hunter, transform.position);
+                audioManager.PlayClip(audioManager.Hunter, transform.position, 1, 1, audioManager.voicseMixerGroup);
                 break;
         }
         GetComponent<PlayerShooter> ().enabled = false;
