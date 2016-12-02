@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
         GameObject.FindGameObjectWithTag ("AudioManager").GetComponent<AudioManager> ().PlayBattleMusic ();
 
         Time.timeScale = 1;

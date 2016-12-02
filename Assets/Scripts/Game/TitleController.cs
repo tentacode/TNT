@@ -12,6 +12,7 @@ public class TitleController : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
         overlay.Fade (new Color(0,0,0,0), 5.0f, Nil);
     }
 

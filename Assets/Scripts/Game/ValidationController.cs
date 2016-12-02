@@ -19,6 +19,7 @@ public class ValidationController : MonoBehaviour {
 
 	void Start ()
     {
+        Cursor.visible = false;
         audioManager = GameObject.FindGameObjectWithTag ("AudioManager").GetComponent<AudioManager> ();
         overlay.Fade (new Color(0,0,0,0), 4.0f, Nil);
 

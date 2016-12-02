@@ -21,3 +21,4 @@ Première version de la jam.
 
 * Ajout des FX de reload et de tir sur l'écran titre et l'écran de sélection de perso.
 * Subtile réduction du volume des lazers et variation aléatoire du pitch.
+* Cacher le curseur dans chacune des scènes.
