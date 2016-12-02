@@ -16,3 +16,7 @@ Première version de la jam.
 * Fade in / fade out entre le titre, le choix des joueurs et la partie.
 * SLOW MO PAUSE EFFECT.
 * Empêcher de faire pause en cliquant sur le joystick.
+
+# 0.3
+
+* Ajout des FX de reload et de tir sur l'écran titre et l'écran de sélection de perso.

@@ -18,6 +18,9 @@ public class TitleController : MonoBehaviour
 	void Update ()
     {
         if (Input.GetButtonDown ("Submit")) {
+            AudioManager am = GameObject.FindGameObjectWithTag ("AudioManager").GetComponent<AudioManager> ();
+            am.PlayClip (am.reload, Vector3.zero, 1.0f);
+
             overlay.Fade (Color.black, 3.0f, moveToPlayerChoice);
         }
 

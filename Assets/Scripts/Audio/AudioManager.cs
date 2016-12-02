@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
 
     [Header("Musics")]
+    public AudioClip introMusic;
     public AudioClip gameMusic;
 
     [Header("FX")]
@@ -22,15 +23,44 @@ public class AudioManager : MonoBehaviour
     public AudioClip bounceShield;
     public AudioClip reload;
 
-	void Start ()
-	{
+    private bool battleMusicPlaying = false;
 
-        Destroy(GameObject.Find("IntroMusicManager"));
+    void Start ()
+    {
+        // looking for other AudioManager
+        GameObject[] audioManagers;
+        audioManagers = GameObject.FindGameObjectsWithTag("AudioManager");
 
-		musicSource.clip = gameMusic;
+        if (audioManagers.Length > 1) {
+            Destroy (gameObject);
+        } else {
+            DontDestroyOnLoad (gameObject);
+            Invoke ("PlayIntroMusic", 1.0f);
+        }
+    }
+
+    void PlayIntroMusic()
+    {   
+        if (battleMusicPlaying) {
+            return;
+        }
+
+        musicSource.clip = introMusic;
+        musicSource.volume = 0.2f;
+        musicSource.Play ();
+    }
+
+    public void PlayBattleMusic()
+    {
+        if (battleMusicPlaying) {
+            return;
+        }
+
+        battleMusicPlaying = true;
+        musicSource.clip = gameMusic;
         musicSource.volume = 0.1f;
-		musicSource.Play ();
-	}
+        musicSource.Play ();
+    }
 
     public void PlayClip(AudioClip clip, Vector3 position, float volume = 1.0f)
 	{

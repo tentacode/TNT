@@ -9,6 +9,8 @@ public class ValidationController : MonoBehaviour {
     bool playerReady1, playerReady2, playerReady3, playerReady4, start;
     bool gamepadReady1, gamepadReady2, gamepadReady3, gamepadReady4;
 
+    private AudioManager audioManager;
+
     public Fader overlay;
 
     void Nil()
@@ -17,6 +19,7 @@ public class ValidationController : MonoBehaviour {
 
 	void Start ()
     {
+        audioManager = GameObject.FindGameObjectWithTag ("AudioManager").GetComponent<AudioManager> ();
         overlay.Fade (new Color(0,0,0,0), 4.0f, Nil);
 
         // text "Ready" par player
@@ -73,7 +76,9 @@ public class ValidationController : MonoBehaviour {
 
         if (start && Input.GetButtonDown("Submit"))
         {
-            overlay.Fade (Color.black, 5.0f, StartGame);
+            audioManager.PlayClip (audioManager.reload, Vector3.zero);
+            Invoke ("StartGame", 1.02f);
+            overlay.Fade (Color.black, 5.0f, Nil);
         }
     }
 
@@ -122,6 +127,9 @@ public class ValidationController : MonoBehaviour {
             return;
         }
 
+
+        audioManager.PlayClip (audioManager.fireLazer1, Vector3.zero);
+
         press3.SetActive (false);
         image3.SetActive (true);
 
@@ -142,6 +150,7 @@ public class ValidationController : MonoBehaviour {
             return;
         }
 
+        audioManager.PlayClip (audioManager.fireLazer2, Vector3.zero);
         press1.SetActive (false);
         image1.SetActive (true);
 
@@ -162,6 +171,8 @@ public class ValidationController : MonoBehaviour {
             return;
         }
 
+        audioManager.PlayClip (audioManager.fireLazer3, Vector3.zero);
+
         press4.SetActive (false);
         image4.SetActive (true);
 
@@ -181,6 +192,8 @@ public class ValidationController : MonoBehaviour {
         if (playerIndex == 0) {
             return;
         }
+
+        audioManager.PlayClip (audioManager.fireLazer4, Vector3.zero);
 
         press2.SetActive (false);
         image2.SetActive (true);

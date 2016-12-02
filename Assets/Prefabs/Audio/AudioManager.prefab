@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000013497473042}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: MusicManager
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +158,7 @@ MonoBehaviour:
   audioSourcePrefab: {fileID: 1000011129818344, guid: e3bac5243f9994fe08337a46cbd53520,
     type: 2}
   musicSource: {fileID: 82000012294679510}
+  introMusic: {fileID: 8300000, guid: e95395f009d3e8245a4f7ed5e6054252, type: 3}
   gameMusic: {fileID: 8300000, guid: 989e94d0e582716468040b818b190ed0, type: 3}
   fireLazer1: {fileID: 8300000, guid: 1b45b648415414aadb5180353474ee1f, type: 3}
   fireLazer2: {fileID: 8300000, guid: 9f5460fec003249768c9d198d525d0ec, type: 3}

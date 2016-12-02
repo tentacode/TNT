@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Wall
   - Shield
-  - MusicManager
+  - AudioManager
   layers:
   - Default
   - TransparentFX
