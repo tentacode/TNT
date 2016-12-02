@@ -20,3 +20,4 @@ Première version de la jam.
 # 0.3
 
 * Ajout des FX de reload et de tir sur l'écran titre et l'écran de sélection de perso.
+* Subtile réduction du volume des lazers et variation aléatoire du pitch.

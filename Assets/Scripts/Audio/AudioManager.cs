@@ -62,7 +62,7 @@ public class AudioManager : MonoBehaviour
         musicSource.Play ();
     }
 
-    public void PlayClip(AudioClip clip, Vector3 position, float volume = 1.0f)
+    public void PlayClip(AudioClip clip, Vector3 position, float volume = 1.0f, float pitch = 1.0f)
 	{
 		GameObject sourceGameObject = (GameObject)Instantiate (
 			audioSourcePrefab, 
@@ -71,6 +71,7 @@ public class AudioManager : MonoBehaviour
 		);
 
 		AudioSource source = sourceGameObject.GetComponent<AudioSource> ();
+        source.pitch = pitch;
         source.volume = volume;
 		source.clip = clip;
 		source.Play ();

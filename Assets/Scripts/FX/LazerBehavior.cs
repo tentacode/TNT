@@ -67,7 +67,7 @@ public class LazerBehavior : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         if (!isMuted && collision.collider.tag == "Wall") {
-            audioManager.PlayClip (audioManager.bounceWall, collision.collider.transform.position, 0.3f);
+            audioManager.PlayClip (audioManager.bounceWall, collision.collider.transform.position, 0.25f, Random.Range(0.9f, 1.1f));
         } else if (!isMuted && collision.collider.tag == "Shield") {
             audioManager.PlayClip (audioManager.bounceShield, collision.collider.transform.position);
         }
