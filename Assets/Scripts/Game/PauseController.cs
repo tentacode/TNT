@@ -11,6 +11,7 @@ public class PauseController : MonoBehaviour
     private bool canPause = false;
     public Fader overlay;
     private AudioManager audioManager;
+    private GameController gameController;
 
     void Nil()
     {
@@ -18,6 +19,7 @@ public class PauseController : MonoBehaviour
 
 	void Start ()
     {
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         pauseCanvas.SetActive (false);
         Invoke ("PauseActive", 2.0f);
@@ -34,9 +36,13 @@ public class PauseController : MonoBehaviour
             return;
         }
 
-        GameObject gameController = GameObject.Find("GameController");
-        if (gameController.GetComponent<GameController> ().isGameEnd) {
+        if (gameController.isGameEnd && !isPaused) {
             return;
+        }
+
+        if (gameController.isGameEnd && isPaused) {
+            ResumeTime ();
+            pauseCanvas.SetActive (false);
         }
 
         if (isPaused && Input.GetButtonDown("Cancel")) {
