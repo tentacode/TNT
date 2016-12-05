@@ -22,7 +22,7 @@ public class PauseController : MonoBehaviour
         gameController = GameObject.Find("GameController").GetComponent<GameController>();
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         pauseCanvas.SetActive (false);
-        Invoke ("PauseActive", 1.0f);
+        Invoke ("PauseActive", 3.5f);
 	}
 
     void PauseActive()

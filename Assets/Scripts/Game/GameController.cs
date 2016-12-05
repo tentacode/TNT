@@ -18,6 +18,11 @@ public class GameController : MonoBehaviour
     public bool isGameStarting = true;
     public bool isGameEnd = false;
 
+    bool isPlayer1 = false;
+    bool isPlayer2 = false;
+    bool isPlayer3 = false;
+    bool isPlayer4 = false;
+
     void Start()
     {
         Cursor.visible = false;
@@ -27,30 +32,36 @@ public class GameController : MonoBehaviour
         Time.fixedDeltaTime = 0.02F;
 
         countdown.SetActive (true);
-        score.SetActive (false);
+        score.SetActive (true);
+        score.GetComponent<Canvas> ().enabled = false;
         //Set les overlay de la scenne
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
 
+        isPlayer1 = PlayerPrefs.GetInt ("Player1") != 0;
+        isPlayer2 = PlayerPrefs.GetInt ("Player2") != 0;
+        isPlayer3 = PlayerPrefs.GetInt ("Player3") != 0;
+        isPlayer4 = PlayerPrefs.GetInt ("Player4") != 0;
+
         // instanciation des joueurs dans la scene
-        if (PlayerPrefs.GetInt("Player1") != 0)
+        if (isPlayer1)
         {
             Stranger = Instantiate(StrangerPrefab, Spawn1.position, Quaternion.Euler(new Vector3(0,113.5f,0))) as GameObject;
             Stranger.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player1");
             alivePlayer++;
         }
-        if (PlayerPrefs.GetInt("Player2") != 0)
+        if (isPlayer2)
         {
             AlienBear = Instantiate(AlienBearPrefab, Spawn2.position, Quaternion.Euler(new Vector3(0, 45f, 0))) as GameObject;
             AlienBear.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player2");
             alivePlayer++;
         }
-        if (PlayerPrefs.GetInt("Player3") != 0)
+        if (isPlayer3)
         {
             Scrap = Instantiate(ScrapPrefab, Spawn3.position, Quaternion.Euler(new Vector3(0, 225f, 0))) as GameObject;
             Scrap.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player3");
             alivePlayer++;
         }
-        if (PlayerPrefs.GetInt("Player4") != 0)
+        if (isPlayer4)
         {
             Hunter = Instantiate(HunterPrefab, Spawn4.position, Quaternion.Euler(new Vector3(0, -45, 0))) as GameObject;
             Hunter.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player4");
@@ -86,24 +97,24 @@ public class GameController : MonoBehaviour
     void EndGame()
     {
         isGameEnd = true;
-        if (!StrangerDeath && PlayerPrefs.GetInt("Player1") != 0)
+        if (!StrangerDeath && isPlayer1)
         {
             PlayerPrefs.SetInt("Stranger", PlayerPrefs.GetInt("Stranger") + 1);
         }
-        if (!AlienBearDeath && PlayerPrefs.GetInt("Player2") != 0)
+        else if (!AlienBearDeath && isPlayer2)
         {
             PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear")+1);
         }
-        if (!ScrapDeath && PlayerPrefs.GetInt("Player3") != 0)
+        else if (!ScrapDeath && isPlayer3)
         {
             PlayerPrefs.SetInt("Scrap", PlayerPrefs.GetInt("Scrap") + 1);
         }
-        if (!HunterDeath && PlayerPrefs.GetInt("Player4") != 0)
+        else if (!HunterDeath && isPlayer4)
         {
             PlayerPrefs.SetInt("Hunter", PlayerPrefs.GetInt("Hunter") + 1);
         }
 
-        score.SetActive (true);
+        score.GetComponent<Canvas> ().enabled = true;
         score.GetComponent<ScoreManager> ().Refresh ();
     }
     
