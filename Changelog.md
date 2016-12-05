@@ -35,3 +35,4 @@ Première version de la jam.
 * Correction du lag quand le score s'affiche la première fois.
 * Amélioration de l'UI de l'écran score.
 * Tri des scores par score décroissant.
+* Réglage des colliders pour que la zone de touche soit la même pour tous (centrage par rapport au bouclier).
