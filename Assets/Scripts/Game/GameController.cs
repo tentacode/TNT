@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
 
     public GameObject score;
 
-
+    public bool isGameStarting = true;
     public bool isGameEnd = false;
 
     void Start()
@@ -54,6 +54,13 @@ public class GameController : MonoBehaviour
             Hunter.GetComponent<PlayerIdentity>().playerIndex = PlayerPrefs.GetInt("Player4");
             alivePlayer++;
         }
+
+        Invoke ("StartGame", 3);
+    }
+
+    void StartGame()
+    {
+        isGameStarting = false;
     }
 
     void Update()

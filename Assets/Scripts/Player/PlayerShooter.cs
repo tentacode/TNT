@@ -7,6 +7,7 @@ public class PlayerShooter : MonoBehaviour
     public GameObject lazerPrefab;
     public AudioManager audioManager;
 
+    private GameController gameController;
     private Texture lazerColor;
     private Color particleColor;
     private int playerIndex;
@@ -17,14 +18,20 @@ public class PlayerShooter : MonoBehaviour
 
     void Start ()
     {
+        gameController = GameObject.Find ("GameController").GetComponent<GameController> ();
         playerIndex = GetComponent<PlayerIdentity> ().playerIndex;
         lazerColor = GetComponent<PlayerIdentity> ().lazerColor;
         particleColor = GetComponent<PlayerIdentity> ().color;
         fireButton = string.Format("Shoot{0}", playerIndex);
     }
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        //Players can't shoot unless game countdown has ended
+        if (gameController.isGameStarting) {
+            return;
+        }
+
         if (IsFiring()) {
             if (bullets > 0) {
                 Fire ();
