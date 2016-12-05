@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
@@ -97,23 +98,30 @@ public class GameController : MonoBehaviour
     void EndGame()
     {
         isGameEnd = true;
+        string winner = "";
         if (!StrangerDeath && isPlayer1)
         {
+            winner = "Stranger";
             PlayerPrefs.SetInt("Stranger", PlayerPrefs.GetInt("Stranger") + 1);
         }
         else if (!AlienBearDeath && isPlayer2)
         {
+            winner = "Alien Bear";
             PlayerPrefs.SetInt("Alien Bear", PlayerPrefs.GetInt("Alien Bear")+1);
         }
         else if (!ScrapDeath && isPlayer3)
         {
+            winner = "Scrap";
             PlayerPrefs.SetInt("Scrap", PlayerPrefs.GetInt("Scrap") + 1);
         }
         else if (!HunterDeath && isPlayer4)
         {
+            winner = "Hunter";
             PlayerPrefs.SetInt("Hunter", PlayerPrefs.GetInt("Hunter") + 1);
         }
 
+
+        GameObject.Find ("WinnerText").GetComponent<Text>().text = winner + " WINS!";
         score.GetComponent<Canvas> ().enabled = true;
         score.GetComponent<ScoreManager> ().Refresh ();
     }

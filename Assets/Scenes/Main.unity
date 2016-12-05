@@ -101,6 +101,7 @@ GameObject:
   - 224: {fileID: 218606526}
   - 222: {fileID: 218606528}
   - 114: {fileID: 218606527}
+  - 114: {fileID: 218606529}
   m_Layer: 5
   m_Name: PressStart
   m_TagString: Untagged
@@ -121,10 +122,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 291005596}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.052527513, y: 0.688363}
-  m_AnchorMax: {x: 0.9473032, y: 0.772}
-  m_AnchoredPosition: {x: 0.5, y: 0.5}
-  m_SizeDelta: {x: -30, y: -25}
+  m_AnchorMin: {x: 0.16642424, y: 0.7396609}
+  m_AnchorMax: {x: 0.8356061, y: 0.81749135}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -24, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218606527
 MonoBehaviour:
@@ -158,13 +159,27 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Start for a Rematch - Press Back to Quit
+  m_Text: Press Start for a Rematch or Back to Quit
 --- !u!222 &218606528
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 218606525}
+--- !u!114 &218606529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 218606525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &228353955
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +474,7 @@ GameObject:
   - 224: {fileID: 505605056}
   - 222: {fileID: 505605058}
   - 114: {fileID: 505605057}
+  - 114: {fileID: 505605059}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -479,10 +495,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 291005596}
   m_RootOrder: 3
-  m_AnchorMin: {x: 0.24614565, y: 0.056}
-  m_AnchorMax: {x: 0.74865365, y: 0.657}
-  m_AnchoredPosition: {x: -1, y: 5}
-  m_SizeDelta: {x: -54, y: -41}
+  m_AnchorMin: {x: 0.16642424, y: 0.056}
+  m_AnchorMax: {x: 0.8356061, y: 0.7224913}
+  m_AnchoredPosition: {x: 0, y: 18}
+  m_SizeDelta: {x: -335, y: -220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505605057
 MonoBehaviour:
@@ -504,7 +520,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b9cea966276e9444eb90da3a16f1cbb7, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -529,6 +545,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 505605055}
+--- !u!114 &505605059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505605055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &584423731
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.753}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.647}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1230,8 +1260,9 @@ GameObject:
   - 224: {fileID: 1767806605}
   - 222: {fileID: 1767806607}
   - 114: {fileID: 1767806606}
+  - 114: {fileID: 1767806608}
   m_Layer: 5
-  m_Name: Title
+  m_Name: WinnerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1250,10 +1281,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 291005596}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0.24614565, y: 0.749}
-  m_AnchorMax: {x: 0.76500005, y: 1}
-  m_AnchoredPosition: {x: -10, y: -7}
-  m_SizeDelta: {x: -71, y: -88}
+  m_AnchorMin: {x: 0.17360607, y: 0.8116608}
+  m_AnchorMax: {x: 0.8356061, y: 1}
+  m_AnchoredPosition: {x: 2.5000076, y: 0}
+  m_SizeDelta: {x: -38, y: -34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767806606
 MonoBehaviour:
@@ -1287,13 +1318,27 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SCORE
+  m_Text: Alien Bear WINS!
 --- !u!222 &1767806607
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1767806604}
+--- !u!114 &1767806608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767806604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: -5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1937015334
 GameObject:
   m_ObjectHideFlags: 0

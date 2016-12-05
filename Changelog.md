@@ -33,3 +33,5 @@ Première version de la jam.
 * Compte à rebours avant de pouvoir tirer.
 * Amélioration de l'UI de l'écran pause.
 * Correction du lag quand le score s'affiche la première fois.
+* Amélioration de l'UI de l'écran score.
+* Tri des scores par score décroissant.
