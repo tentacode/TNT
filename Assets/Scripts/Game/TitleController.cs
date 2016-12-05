@@ -14,6 +14,9 @@ public class TitleController : MonoBehaviour
     {
         Cursor.visible = false;
         overlay.Fade (new Color(0,0,0,0), 5.0f, Nil);
+
+        AudioManager am = GameObject.FindGameObjectWithTag ("AudioManager").GetComponent<AudioManager> ();
+        am.TriggerIntroMusic ();
     }
 
 	void Update ()

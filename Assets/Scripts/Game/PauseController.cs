@@ -40,8 +40,8 @@ public class PauseController : MonoBehaviour
         }
 
         if (isPaused && Input.GetButtonDown("Cancel")) {
-            Time.timeScale = 1;
-            Time.fixedDeltaTime = 0.02F;
+            ResumeTime ();
+
             SceneManager.LoadScene ("Title");
         }
 
@@ -49,6 +49,13 @@ public class PauseController : MonoBehaviour
             TogglePause ();
         }
 	}
+
+    void ResumeTime()
+    {
+        Time.timeScale = 1;
+        Time.fixedDeltaTime = 0.02F;
+        audioManager.musicSource.pitch = 1;
+    }
 
     bool IsPauseButton()
     {
@@ -77,9 +84,8 @@ public class PauseController : MonoBehaviour
             Time.fixedDeltaTime = 0.02F * Time.timeScale;
 
             if (Time.timeScale > 0.99f) {
-                Time.timeScale = 1;
                 isDepausing = false;
-                Time.fixedDeltaTime = 0.02F;
+                ResumeTime ();
             }
         }
     }

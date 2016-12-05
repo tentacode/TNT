@@ -40,16 +40,20 @@ public class AudioManager : MonoBehaviour
             Destroy (gameObject);
         } else {
             DontDestroyOnLoad (gameObject);
+        }
+    }
+
+    public void TriggerIntroMusic()
+    {
+        if (battleMusicPlaying) {
+            PlayIntroMusic ();
+        } else {
             Invoke ("PlayIntroMusic", 1.0f);
         }
     }
 
     void PlayIntroMusic()
     {   
-        if (battleMusicPlaying) {
-            return;
-        }
-
         musicSource.clip = introMusic;
         musicSource.volume = 0.2f;
         musicSource.Play ();

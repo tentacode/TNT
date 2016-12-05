@@ -24,3 +24,8 @@ Première version de la jam.
 * Cacher le curseur dans chacune des scènes.
 * Remettre les murs qui avaient disparus.
 * Augmentation du volume des sons de death.
+
+# 0.4
+
+* Rétablissement du pitch de la musique quand on revient de la pause à l'écran titre.
+* Rétablissement de la musique d'intro quand on revient de la pause à l'écran titre.
