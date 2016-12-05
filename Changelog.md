@@ -36,3 +36,5 @@ Première version de la jam.
 * Amélioration de l'UI de l'écran score.
 * Tri des scores par score décroissant.
 * Réglage des colliders pour que la zone de touche soit la même pour tous (centrage par rapport au bouclier).
+* Amélioration de l'UI de l'écran de choix de perso.
+* Logo, bannière, titre du jeu, GameDevParty en tant que société.
