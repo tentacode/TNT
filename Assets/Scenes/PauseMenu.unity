@@ -119,8 +119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseCanvas: {fileID: 765560392}
   overlay: {fileID: 1575234917}
-  audioManager: {fileID: 114000013497473042, guid: 7a458b79cbea2429abec443ce3d827d5,
-    type: 2}
 --- !u!4 &363735672
 Transform:
   m_ObjectHideFlags: 0
@@ -144,6 +142,7 @@ GameObject:
   - 224: {fileID: 464059251}
   - 222: {fileID: 464059253}
   - 114: {fileID: 464059252}
+  - 114: {fileID: 464059254}
   m_Layer: 5
   m_Name: TitleText
   m_TagString: Untagged
@@ -208,6 +207,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 464059250}
+--- !u!114 &464059254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464059250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 4, y: -4}
+  m_UseGraphicAlpha: 1
 --- !u!1 &765560392
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +326,7 @@ GameObject:
   - 224: {fileID: 797137236}
   - 222: {fileID: 797137238}
   - 114: {fileID: 797137237}
+  - 114: {fileID: 797137239}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -371,6 +385,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 797137235}
+--- !u!114 &797137239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797137235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1290414778
 GameObject:
   m_ObjectHideFlags: 0

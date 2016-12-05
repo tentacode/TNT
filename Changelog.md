@@ -31,3 +31,4 @@ Première version de la jam.
 * Rétablissement de la musique d'intro quand on revient de la pause à l'écran titre.
 * Empêcher la pause de s'afficher si on doit afficher le score (déclenchement de la pause puis mort du dernier perso par exemple).
 * Compte à rebours avant de pouvoir tirer.
+* Amélioration de l'UI de l'écran pause.

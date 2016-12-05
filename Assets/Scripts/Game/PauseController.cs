@@ -106,10 +106,12 @@ public class PauseController : MonoBehaviour
             isDepausing = false;
             isPausing = true;
         } else {
+            DeactivatePause ();
             Time.timeScale = 0.1f;
-            overlay.Fade(new Color(0,0,0,0f), 7, DeactivatePause);
+            overlay.Fade(new Color(0,0,0,0f), 7, Nil);
             isPausing = false;
             isDepausing = true;
+            pauseCanvas.SetActive (false);
         }
 
     }

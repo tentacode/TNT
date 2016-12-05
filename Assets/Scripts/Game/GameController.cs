@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     public int playerActive1, playerActive2, playerActive3, playerActive4;
 
     public GameObject score;
+    public GameObject countdown;
 
     public bool isGameStarting = true;
     public bool isGameEnd = false;
@@ -25,6 +26,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         Time.fixedDeltaTime = 0.02F;
 
+        countdown.SetActive (true);
         score.SetActive (false);
         //Set les overlay de la scenne
         SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
